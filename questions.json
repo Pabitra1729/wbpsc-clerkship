@@ -1,0 +1,1601 @@
+[
+  {
+    "id": 1,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who is known as the 'Father of the Indian National Congress'?",
+    "options": ["A. Dadabhai Naoroji", "B. Allan Octavian Hume", "C. Bal Gangadhar Tilak", "D. Gopal Krishna Gokhale"],
+    "answer": "B",
+    "explanation": "Allan Octavian Hume, a retired British civil servant, founded the Indian National Congress in 1885."
+  },
+  {
+    "id": 2,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Partition of Bengal was annulled in which year?",
+    "options": ["A. 1905", "B. 1906", "C. 1911", "D. 1919"],
+    "answer": "C",
+    "explanation": "The Partition of Bengal (1905) was annulled in 1911 due to massive protests and the Swadeshi Movement."
+  },
+  {
+    "id": 3,
+    "category": "Indian History & Freedom Movement",
+    "question": "Which session of the Indian National Congress declared 'Poorna Swaraj' (complete independence) as its goal?",
+    "options": ["A. Calcutta Session 1906", "B. Nagpur Session 1920", "C. Lahore Session 1929", "D. Karachi Session 1931"],
+    "answer": "C",
+    "explanation": "The Lahore Session of INC in 1929, presided by Jawaharlal Nehru, passed the Poorna Swaraj resolution."
+  },
+  {
+    "id": 4,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Dandi March started on which date?",
+    "options": ["A. March 12, 1930", "B. April 6, 1930", "C. January 26, 1930", "D. August 9, 1930"],
+    "answer": "A",
+    "explanation": "Mahatma Gandhi started the Dandi March (Salt March) on March 12, 1930 from Sabarmati Ashram."
+  },
+  {
+    "id": 5,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who gave the slogan 'Jai Hind'?",
+    "options": ["A. Jawaharlal Nehru", "B. Subhas Chandra Bose", "C. Bhagat Singh", "D. Lala Lajpat Rai"],
+    "answer": "B",
+    "explanation": "Subhas Chandra Bose popularized the patriotic slogan 'Jai Hind'."
+  },
+  {
+    "id": 6,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Jallianwala Bagh massacre took place on which date?",
+    "options": ["A. April 13, 1919", "B. April 6, 1919", "C. March 30, 1919", "D. May 1, 1919"],
+    "answer": "A",
+    "explanation": "The Jallianwala Bagh massacre occurred on April 13, 1919 (Baisakhi day) when General Dyer ordered firing on a peaceful gathering."
+  },
+  {
+    "id": 7,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who wrote 'Anandamath', a Bengali novel inspiring nationalists?",
+    "options": ["A. Rabindranath Tagore", "B. Bankim Chandra Chattopadhyay", "C. Sarat Chandra Chattopadhyay", "D. Michael Madhusudan Dutta"],
+    "answer": "B",
+    "explanation": "Bankim Chandra Chattopadhyay wrote 'Anandamath' (1882), which contains the song 'Vande Mataram'."
+  },
+  {
+    "id": 8,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Indian Councils Act of 1909 is also known as?",
+    "options": ["A. Montagu-Chelmsford Reforms", "B. Morley-Minto Reforms", "C. Rowlatt Act", "D. Government of India Act"],
+    "answer": "B",
+    "explanation": "The Indian Councils Act of 1909 is known as the Morley-Minto Reforms, after Lord Morley (Secretary of State) and Lord Minto (Viceroy)."
+  },
+  {
+    "id": 9,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who founded the Arya Samaj in 1875?",
+    "options": ["A. Ram Mohan Roy", "B. Swami Vivekananda", "C. Swami Dayananda Saraswati", "D. Keshab Chandra Sen"],
+    "answer": "C",
+    "explanation": "Swami Dayananda Saraswati founded the Arya Samaj in 1875 in Bombay."
+  },
+  {
+    "id": 10,
+    "category": "Indian History & Freedom Movement",
+    "question": "The 'Quit India Movement' was launched in which year?",
+    "options": ["A. 1940", "B. 1941", "C. 1942", "D. 1943"],
+    "answer": "C",
+    "explanation": "The Quit India Movement was launched by Mahatma Gandhi on August 8, 1942."
+  },
+  {
+    "id": 11,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was the Viceroy of India during the partition of Bengal in 1905?",
+    "options": ["A. Lord Dufferin", "B. Lord Curzon", "C. Lord Minto", "D. Lord Hardinge"],
+    "answer": "B",
+    "explanation": "Lord Curzon was the Viceroy of India when the Partition of Bengal was carried out in 1905."
+  },
+  {
+    "id": 12,
+    "category": "Indian History & Freedom Movement",
+    "question": "The first session of the Indian National Congress was held in which city?",
+    "options": ["A. Calcutta", "B. Madras", "C. Bombay", "D. Allahabad"],
+    "answer": "C",
+    "explanation": "The first session of the Indian National Congress was held in Bombay in December 1885."
+  },
+  {
+    "id": 13,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who is known as 'Lok Manya'?",
+    "options": ["A. Gopal Krishna Gokhale", "B. Bipin Chandra Pal", "C. Bal Gangadhar Tilak", "D. Lala Lajpat Rai"],
+    "answer": "C",
+    "explanation": "Bal Gangadhar Tilak was given the title 'Lok Manya' meaning 'Respected by the People'."
+  },
+  {
+    "id": 14,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Chauri Chaura incident that led Gandhi to withdraw the Non-Cooperation Movement occurred in which year?",
+    "options": ["A. 1920", "B. 1921", "C. 1922", "D. 1923"],
+    "answer": "C",
+    "explanation": "The Chauri Chaura incident occurred on February 5, 1922, where a mob burned a police station killing 22 policemen."
+  },
+  {
+    "id": 15,
+    "category": "Indian History & Freedom Movement",
+    "question": "Simon Commission visited India in which year?",
+    "options": ["A. 1926", "B. 1927", "C. 1928", "D. 1929"],
+    "answer": "C",
+    "explanation": "The Simon Commission, under Sir John Simon, arrived in India in 1928 and was boycotted as it had no Indian members."
+  },
+  {
+    "id": 16,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was known as the 'Iron Man of India'?",
+    "options": ["A. Jawaharlal Nehru", "B. Sardar Vallabhbhai Patel", "C. Subhas Chandra Bose", "D. Bhagat Singh"],
+    "answer": "B",
+    "explanation": "Sardar Vallabhbhai Patel was known as the 'Iron Man of India' for his role in unifying the Indian princely states."
+  },
+  {
+    "id": 17,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Sepoy Mutiny of 1857 began at which place?",
+    "options": ["A. Delhi", "B. Kanpur", "C. Meerut", "D. Jhansi"],
+    "answer": "C",
+    "explanation": "The Sepoy Mutiny (First War of Independence) began on May 10, 1857 at Meerut."
+  },
+  {
+    "id": 18,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who composed the national song 'Vande Mataram'?",
+    "options": ["A. Rabindranath Tagore", "B. Bankim Chandra Chattopadhyay", "C. Subramanya Bharati", "D. Iqbal"],
+    "answer": "B",
+    "explanation": "'Vande Mataram' was composed by Bankim Chandra Chattopadhyay and first published in his novel Anandamath."
+  },
+  {
+    "id": 19,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Indian Independence Act was passed by the British Parliament in which year?",
+    "options": ["A. 1946", "B. 1947", "C. 1948", "D. 1949"],
+    "answer": "B",
+    "explanation": "The Indian Independence Act was passed in July 1947, leading to the creation of India and Pakistan on August 14-15, 1947."
+  },
+  {
+    "id": 20,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who led the Bardoli Satyagraha in 1928?",
+    "options": ["A. Mahatma Gandhi", "B. Jawaharlal Nehru", "C. Sardar Vallabhbhai Patel", "D. Rajendra Prasad"],
+    "answer": "C",
+    "explanation": "Sardar Vallabhbhai Patel led the Bardoli Satyagraha in 1928 against enhanced land revenue, which was highly successful."
+  },
+  {
+    "id": 21,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Lucknow Pact (1916) was signed between which two organizations?",
+    "options": ["A. INC and Muslim League", "B. INC and Hindu Mahasabha", "C. Muslim League and Khilafat Committee", "D. INC and Arya Samaj"],
+    "answer": "A",
+    "explanation": "The Lucknow Pact was signed between the Indian National Congress and the All India Muslim League in 1916."
+  },
+  {
+    "id": 22,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who founded the 'Brahmo Samaj' in 1828?",
+    "options": ["A. Swami Vivekananda", "B. Keshab Chandra Sen", "C. Ram Mohan Roy", "D. Debendranath Tagore"],
+    "answer": "C",
+    "explanation": "Raja Ram Mohan Roy founded the Brahmo Samaj in 1828, a social and religious reform movement."
+  },
+  {
+    "id": 23,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Poona Pact (1932) was signed between Gandhi and?",
+    "options": ["A. Muhammad Ali Jinnah", "B. B.R. Ambedkar", "C. Jawaharlal Nehru", "D. Madan Mohan Malaviya"],
+    "answer": "B",
+    "explanation": "The Poona Pact was signed between Mahatma Gandhi and Dr. B.R. Ambedkar in 1932, regarding separate electorates for Dalits."
+  },
+  {
+    "id": 24,
+    "category": "Indian History & Freedom Movement",
+    "question": "In which city was the Indian National Army (Azad Hind Fauj) established by Subhas Chandra Bose?",
+    "options": ["A. Tokyo", "B. Singapore", "C. Berlin", "D. Rangoon"],
+    "answer": "B",
+    "explanation": "The Indian National Army (INA) was reorganized and led by Subhas Chandra Bose from Singapore in 1943."
+  },
+  {
+    "id": 25,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was the first President of the Indian National Congress?",
+    "options": ["A. Dadabhai Naoroji", "B. Womesh Chunder Bonnerjee", "C. Surendranath Banerjea", "D. Gopal Krishna Gokhale"],
+    "answer": "B",
+    "explanation": "Womesh Chunder Bonnerjee (W.C. Bonnerji) was the first President of the Indian National Congress in 1885."
+  },
+  {
+    "id": 26,
+    "category": "Indian History & Freedom Movement",
+    "question": "The slogan 'Do or Die' was given during which movement?",
+    "options": ["A. Non-Cooperation Movement", "B. Civil Disobedience Movement", "C. Quit India Movement", "D. Swadeshi Movement"],
+    "answer": "C",
+    "explanation": "Gandhi gave the 'Do or Die' slogan during the Quit India Movement in 1942."
+  },
+  {
+    "id": 27,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Rowlatt Act was passed in which year?",
+    "options": ["A. 1917", "B. 1918", "C. 1919", "D. 1920"],
+    "answer": "C",
+    "explanation": "The Rowlatt Act (Anarchical and Revolutionary Crimes Act) was passed in March 1919, allowing detention without trial."
+  },
+  {
+    "id": 28,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who is known as 'Punjab Kesari'?",
+    "options": ["A. Bhagat Singh", "B. Lala Lajpat Rai", "C. Bal Gangadhar Tilak", "D. Bipin Chandra Pal"],
+    "answer": "B",
+    "explanation": "Lala Lajpat Rai was known as 'Punjab Kesari' (Lion of Punjab)."
+  },
+  {
+    "id": 29,
+    "category": "Indian History & Freedom Movement",
+    "question": "Which revolutionary was nicknamed 'Shaheed-e-Azam'?",
+    "options": ["A. Chandra Shekhar Azad", "B. Sukhdev", "C. Bhagat Singh", "D. Ram Prasad Bismil"],
+    "answer": "C",
+    "explanation": "Bhagat Singh was called 'Shaheed-e-Azam' (the Great Martyr) for his supreme sacrifice at age 23."
+  },
+  {
+    "id": 30,
+    "category": "Indian History & Freedom Movement",
+    "question": "In which year did India achieve independence?",
+    "options": ["A. 1945", "B. 1946", "C. 1947", "D. 1948"],
+    "answer": "C",
+    "explanation": "India became independent on August 15, 1947."
+  },
+  {
+    "id": 31,
+    "category": "Indian History & Freedom Movement",
+    "question": "The 'Swadeshi Movement' was launched in response to which event?",
+    "options": ["A. Jallianwala Bagh massacre", "B. Partition of Bengal 1905", "C. Rowlatt Act", "D. Simon Commission"],
+    "answer": "B",
+    "explanation": "The Swadeshi Movement was launched in 1905 in protest against Lord Curzon's partition of Bengal."
+  },
+  {
+    "id": 32,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was the last Viceroy of India?",
+    "options": ["A. Lord Wavell", "B. Lord Mountbatten", "C. Lord Linlithgow", "D. Lord Irwin"],
+    "answer": "B",
+    "explanation": "Lord Mountbatten was the last Viceroy of India (1947), who oversaw the transfer of power."
+  },
+  {
+    "id": 33,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Khilafat Movement in India was launched to support the?",
+    "options": ["A. Ottoman Caliph", "B. Mecca Sharif", "C. Indian Muslims' rights", "D. Pan-Islamic unity against British"],
+    "answer": "A",
+    "explanation": "The Khilafat Movement (1919-1922) was launched to support the Ottoman Caliph against the terms of WWI peace treaty."
+  },
+  {
+    "id": 34,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Cabinet Mission Plan was presented in which year?",
+    "options": ["A. 1944", "B. 1945", "C. 1946", "D. 1947"],
+    "answer": "C",
+    "explanation": "The Cabinet Mission Plan was presented in 1946 to discuss the transfer of power from British to Indian leaders."
+  },
+  {
+    "id": 35,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was the first woman President of the Indian National Congress?",
+    "options": ["A. Sarojini Naidu", "B. Annie Besant", "C. Vijaya Lakshmi Pandit", "D. Indira Gandhi"],
+    "answer": "B",
+    "explanation": "Annie Besant became the first woman President of the INC in 1917 at the Calcutta session."
+  },
+  {
+    "id": 36,
+    "category": "Indian History & Freedom Movement",
+    "question": "The All India Muslim League was founded in which year?",
+    "options": ["A. 1900", "B. 1904", "C. 1906", "D. 1908"],
+    "answer": "C",
+    "explanation": "The All India Muslim League was founded in 1906 in Dhaka."
+  },
+  {
+    "id": 37,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was the founder of 'Forward Bloc' party?",
+    "options": ["A. Jawaharlal Nehru", "B. Subhas Chandra Bose", "C. Bhagat Singh", "D. Bal Gangadhar Tilak"],
+    "answer": "B",
+    "explanation": "Subhas Chandra Bose founded the All India Forward Bloc in 1939."
+  },
+  {
+    "id": 38,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Champaran Satyagraha (1917) was related to which issue?",
+    "options": ["A. Salt tax", "B. Indigo cultivation", "C. Land revenue", "D. Mill workers' rights"],
+    "answer": "B",
+    "explanation": "The Champaran Satyagraha (1917) was Gandhi's first satyagraha in India against the exploitation of indigo farmers."
+  },
+  {
+    "id": 39,
+    "category": "Indian History & Freedom Movement",
+    "question": "The 'Ghadar Party' was founded by?",
+    "options": ["A. Lala Lajpat Rai", "B. Lala Har Dayal", "C. Bhagat Singh", "D. Surendra Nath Banerjee"],
+    "answer": "B",
+    "explanation": "Lala Har Dayal founded the Ghadar Party in 1913 in San Francisco, USA."
+  },
+  {
+    "id": 40,
+    "category": "Indian History & Freedom Movement",
+    "question": "Mahatma Gandhi's autobiography is titled?",
+    "options": ["A. My Life and Times", "B. The Story of My Experiments with Truth", "C. India of My Dreams", "D. Hind Swaraj"],
+    "answer": "B",
+    "explanation": "Gandhi's autobiography is 'The Story of My Experiments with Truth', originally written in Gujarati."
+  },
+  {
+    "id": 41,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Battle of Plassey (1757) was fought between?",
+    "options": ["A. British and Marathas", "B. British and Tipu Sultan", "C. British and Siraj-ud-Daula", "D. British and Hyder Ali"],
+    "answer": "C",
+    "explanation": "The Battle of Plassey (1757) was fought between the British East India Company and Siraj-ud-Daula, Nawab of Bengal."
+  },
+  {
+    "id": 42,
+    "category": "Indian History & Freedom Movement",
+    "question": "The 'Permanent Settlement' in Bengal was introduced by?",
+    "options": ["A. Lord Cornwallis", "B. Lord Wellesley", "C. Lord Dalhousie", "D. Lord Clive"],
+    "answer": "A",
+    "explanation": "Lord Cornwallis introduced the Permanent Settlement in Bengal in 1793."
+  },
+  {
+    "id": 43,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who started the newspaper 'Kesari'?",
+    "options": ["A. Gopal Krishna Gokhale", "B. Lala Lajpat Rai", "C. Bal Gangadhar Tilak", "D. Bipin Chandra Pal"],
+    "answer": "C",
+    "explanation": "Bal Gangadhar Tilak started the Marathi newspaper 'Kesari' (meaning Lion) in 1881."
+  },
+  {
+    "id": 44,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Doctrine of Lapse was introduced by?",
+    "options": ["A. Lord Dalhousie", "B. Lord Cornwallis", "C. Lord Wellesley", "D. Lord Curzon"],
+    "answer": "A",
+    "explanation": "Lord Dalhousie introduced the Doctrine of Lapse, by which princely states without a natural heir were annexed by the British."
+  },
+  {
+    "id": 45,
+    "category": "Indian History & Freedom Movement",
+    "question": "Which Act gave the British Crown direct control over India from the East India Company?",
+    "options": ["A. Charter Act 1853", "B. Government of India Act 1858", "C. Indian Councils Act 1861", "D. Regulating Act 1773"],
+    "answer": "B",
+    "explanation": "The Government of India Act 1858 transferred control of India from the East India Company to the British Crown."
+  },
+  {
+    "id": 46,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Montagu-Chelmsford Reforms were introduced in which year?",
+    "options": ["A. 1916", "B. 1917", "C. 1919", "D. 1920"],
+    "answer": "C",
+    "explanation": "The Montagu-Chelmsford Reforms (Government of India Act 1919) introduced dyarchy in the provinces."
+  },
+  {
+    "id": 47,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was called 'Deshbandhu'?",
+    "options": ["A. Subhas Chandra Bose", "B. Chittaranjan Das", "C. Bipin Chandra Pal", "D. Aurobindo Ghose"],
+    "answer": "B",
+    "explanation": "Chittaranjan Das (C.R. Das) was called 'Deshbandhu' (Friend of the Nation)."
+  },
+  {
+    "id": 48,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Nehru Report (1928) was drafted by?",
+    "options": ["A. Jawaharlal Nehru", "B. Motilal Nehru", "C. Both Nehrus together", "D. An INC committee"],
+    "answer": "B",
+    "explanation": "The Nehru Report was drafted by a committee chaired by Motilal Nehru in 1928."
+  },
+  {
+    "id": 49,
+    "category": "Indian History & Freedom Movement",
+    "question": "Bhagat Singh, Rajguru and Sukhdev were executed on which date?",
+    "options": ["A. March 23, 1931", "B. April 6, 1930", "C. August 15, 1931", "D. January 26, 1931"],
+    "answer": "A",
+    "explanation": "Bhagat Singh, Rajguru, and Sukhdev were hanged on March 23, 1931 at Lahore Central Jail."
+  },
+  {
+    "id": 50,
+    "category": "Indian History & Freedom Movement",
+    "question": "The 'Home Rule League' was founded by Bal Gangadhar Tilak in which year?",
+    "options": ["A. 1914", "B. 1915", "C. 1916", "D. 1917"],
+    "answer": "C",
+    "explanation": "Bal Gangadhar Tilak founded the Indian Home Rule League in 1916 at Belgaum."
+  },
+  {
+    "id": 51,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was the first Indian to be elected to the British House of Commons?",
+    "options": ["A. Gopal Krishna Gokhale", "B. Dadabhai Naoroji", "C. W.C. Bonnerji", "D. S. N. Banerjee"],
+    "answer": "B",
+    "explanation": "Dadabhai Naoroji was the first Indian to be elected to the British House of Commons in 1892."
+  },
+  {
+    "id": 52,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Subsidiary Alliance system was introduced by?",
+    "options": ["A. Lord Cornwallis", "B. Lord Dalhousie", "C. Lord Wellesley", "D. Lord Hastings"],
+    "answer": "C",
+    "explanation": "Lord Wellesley introduced the Subsidiary Alliance system in 1798 to extend British power over Indian states."
+  },
+  {
+    "id": 53,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who established the Ramakrishna Mission in 1897?",
+    "options": ["A. Ramakrishna Paramahamsa", "B. Swami Vivekananda", "C. Dayananda Saraswati", "D. Keshab Chandra Sen"],
+    "answer": "B",
+    "explanation": "Swami Vivekananda established the Ramakrishna Mission in 1897 at Belur, West Bengal."
+  },
+  {
+    "id": 54,
+    "category": "Indian History & Freedom Movement",
+    "question": "The INC split at the Surat Session in which year?",
+    "options": ["A. 1905", "B. 1906", "C. 1907", "D. 1908"],
+    "answer": "C",
+    "explanation": "The INC split into Moderates and Extremists at the Surat Session in 1907."
+  },
+  {
+    "id": 55,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was the first Indian Governor-General of India?",
+    "options": ["A. Jawaharlal Nehru", "B. Rajendra Prasad", "C. C. Rajagopalachari", "D. Sardar Patel"],
+    "answer": "C",
+    "explanation": "C. Rajagopalachari (Rajaji) was the first and only Indian Governor-General of independent India (1948-1950)."
+  },
+  {
+    "id": 56,
+    "category": "Indian History & Freedom Movement",
+    "question": "Gandhi returned to India from South Africa in which year?",
+    "options": ["A. 1913", "B. 1914", "C. 1915", "D. 1916"],
+    "answer": "C",
+    "explanation": "Mahatma Gandhi returned to India from South Africa in January 1915."
+  },
+  {
+    "id": 57,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Indian National Army trials were held at?",
+    "options": ["A. Calcutta", "B. Lahore", "C. Red Fort, Delhi", "D. Bombay"],
+    "answer": "C",
+    "explanation": "The INA trials were held at the Red Fort in Delhi in 1945-46."
+  },
+  {
+    "id": 58,
+    "category": "Indian History & Freedom Movement",
+    "question": "Which battle established British supremacy in Bengal?",
+    "options": ["A. Battle of Buxar 1764", "B. Battle of Plassey 1757", "C. Battle of Panipat 1761", "D. Battle of Seringapatam 1799"],
+    "answer": "B",
+    "explanation": "The Battle of Plassey (1757) established British supremacy in Bengal."
+  },
+  {
+    "id": 59,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who founded the Indian Association in 1876?",
+    "options": ["A. W.C. Bonnerji", "B. Surendranath Banerjea", "C. Dadabhai Naoroji", "D. Gopal Krishna Gokhale"],
+    "answer": "B",
+    "explanation": "Surendranath Banerjea founded the Indian Association in Calcutta in 1876."
+  },
+  {
+    "id": 60,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Wavell Plan was proposed in which year?",
+    "options": ["A. 1944", "B. 1945", "C. 1946", "D. 1947"],
+    "answer": "B",
+    "explanation": "The Wavell Plan was proposed in 1945 at the Shimla Conference."
+  },
+  {
+    "id": 61,
+    "category": "Indian History & Freedom Movement",
+    "question": "Which organization was founded by Annie Besant in 1916?",
+    "options": ["A. Theosophical Society", "B. Home Rule League", "C. Indian Women's Association", "D. Indian Social Conference"],
+    "answer": "B",
+    "explanation": "Annie Besant founded the Home Rule League in 1916 alongside Tilak's own Home Rule League."
+  },
+  {
+    "id": 62,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Minto-Morley Reforms introduced separate electorates for which community?",
+    "options": ["A. Sikhs", "B. Christians", "C. Muslims", "D. Anglo-Indians"],
+    "answer": "C",
+    "explanation": "The Minto-Morley Reforms (1909) introduced the concept of separate electorates for Muslims."
+  },
+  {
+    "id": 63,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who started the newspaper 'Young India'?",
+    "options": ["A. Jawaharlal Nehru", "B. Mahatma Gandhi", "C. Bal Gangadhar Tilak", "D. Annie Besant"],
+    "answer": "B",
+    "explanation": "Mahatma Gandhi started the English-language journal 'Young India' in 1919."
+  },
+  {
+    "id": 64,
+    "category": "Indian History & Freedom Movement",
+    "question": "At which Round Table Conference did Gandhi participate?",
+    "options": ["A. First (1930-31)", "B. Second (1931-32)", "C. Third (1932-33)", "D. All three"],
+    "answer": "B",
+    "explanation": "Gandhi participated only in the Second Round Table Conference in London in 1931."
+  },
+  {
+    "id": 65,
+    "category": "Indian History & Freedom Movement",
+    "question": "The policy of 'Divide and Rule' was followed mainly by which Viceroy?",
+    "options": ["A. Lord Curzon", "B. Lord Dalhousie", "C. Lord Minto", "D. Lord Reading"],
+    "answer": "A",
+    "explanation": "Lord Curzon is most associated with the policy of 'Divide and Rule', exemplified by the Partition of Bengal."
+  },
+  {
+    "id": 66,
+    "category": "Indian History & Freedom Movement",
+    "question": "Subhas Chandra Bose escaped from India to Germany in which year?",
+    "options": ["A. 1939", "B. 1940", "C. 1941", "D. 1942"],
+    "answer": "C",
+    "explanation": "Subhas Chandra Bose escaped from house arrest and reached Germany in 1941."
+  },
+  {
+    "id": 67,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Deoband school of Islamic thought was founded in which year?",
+    "options": ["A. 1857", "B. 1867", "C. 1875", "D. 1885"],
+    "answer": "B",
+    "explanation": "The Darul Uloom Deoband was founded in 1867 in Deoband (Uttar Pradesh)."
+  },
+  {
+    "id": 68,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was the founder of the Aligarh Movement?",
+    "options": ["A. Muhammad Ali Jinnah", "B. Sir Syed Ahmad Khan", "C. Maulana Azad", "D. Aga Khan"],
+    "answer": "B",
+    "explanation": "Sir Syed Ahmad Khan founded the Aligarh Movement to promote modern education among Muslims."
+  },
+  {
+    "id": 69,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Congress Socialist Party was founded in which year?",
+    "options": ["A. 1932", "B. 1934", "C. 1936", "D. 1938"],
+    "answer": "B",
+    "explanation": "The Congress Socialist Party was founded in 1934 by Jayaprakash Narayan and others within the INC."
+  },
+  {
+    "id": 70,
+    "category": "Indian History & Freedom Movement",
+    "question": "The 'Azad Hind' government was declared in exile by Subhas Chandra Bose in which year?",
+    "options": ["A. 1941", "B. 1942", "C. 1943", "D. 1944"],
+    "answer": "C",
+    "explanation": "The Provisional Government of Free India (Azad Hind) was declared in Singapore on October 21, 1943."
+  },
+  {
+    "id": 71,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who gave the famous 'Tryst with Destiny' speech?",
+    "options": ["A. Mahatma Gandhi", "B. Sardar Vallabhbhai Patel", "C. Jawaharlal Nehru", "D. Rajendra Prasad"],
+    "answer": "C",
+    "explanation": "Jawaharlal Nehru gave the 'Tryst with Destiny' speech at midnight on August 14-15, 1947."
+  },
+  {
+    "id": 72,
+    "category": "Indian History & Freedom Movement",
+    "question": "Which Mughal Emperor built the Taj Mahal?",
+    "options": ["A. Akbar", "B. Jahangir", "C. Shah Jahan", "D. Aurangzeb"],
+    "answer": "C",
+    "explanation": "Shah Jahan built the Taj Mahal in Agra (1632-1653) as a mausoleum for his wife Mumtaz Mahal."
+  },
+  {
+    "id": 73,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Mughal Empire was founded by?",
+    "options": ["A. Humayun", "B. Babur", "C. Akbar", "D. Sher Shah Suri"],
+    "answer": "B",
+    "explanation": "Babur founded the Mughal Empire after the First Battle of Panipat in 1526."
+  },
+  {
+    "id": 74,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who introduced the 'Din-i-Ilahi' religion?",
+    "options": ["A. Babur", "B. Humayun", "C. Akbar", "D. Jahangir"],
+    "answer": "C",
+    "explanation": "Emperor Akbar introduced Din-i-Ilahi (Divine Faith) in 1582 as a syncretic religion."
+  },
+  {
+    "id": 75,
+    "category": "Indian History & Freedom Movement",
+    "question": "The First Battle of Panipat was fought in which year?",
+    "options": ["A. 1520", "B. 1526", "C. 1556", "D. 1576"],
+    "answer": "B",
+    "explanation": "The First Battle of Panipat was fought in 1526 between Babur and Ibrahim Lodi."
+  },
+  {
+    "id": 76,
+    "category": "Indian History & Freedom Movement",
+    "question": "Mahatma Gandhi was born on?",
+    "options": ["A. October 1, 1869", "B. October 2, 1869", "C. January 30, 1869", "D. November 14, 1869"],
+    "answer": "B",
+    "explanation": "Mahatma Gandhi was born on October 2, 1869 in Porbandar, Gujarat."
+  },
+  {
+    "id": 77,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who killed Mahatma Gandhi on January 30, 1948?",
+    "options": ["A. Nathuram Godse", "B. Gopal Godse", "C. Narayan Apte", "D. Vinayak Savarkar"],
+    "answer": "A",
+    "explanation": "Nathuram Godse assassinated Mahatma Gandhi on January 30, 1948 at Birla House, New Delhi."
+  },
+  {
+    "id": 78,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Non-Cooperation Movement was launched in which year?",
+    "options": ["A. 1919", "B. 1920", "C. 1921", "D. 1922"],
+    "answer": "B",
+    "explanation": "The Non-Cooperation Movement was launched by Gandhi in August 1920."
+  },
+  {
+    "id": 79,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who gave the slogan 'Swaraj is my birthright and I shall have it'?",
+    "options": ["A. Mahatma Gandhi", "B. Jawaharlal Nehru", "C. Bal Gangadhar Tilak", "D. Bipin Chandra Pal"],
+    "answer": "C",
+    "explanation": "Bal Gangadhar Tilak gave the famous slogan 'Swaraj is my birthright and I shall have it'."
+  },
+  {
+    "id": 80,
+    "category": "Indian History & Freedom Movement",
+    "question": "Which year was the 'Constituent Assembly' of India formed?",
+    "options": ["A. 1945", "B. 1946", "C. 1947", "D. 1948"],
+    "answer": "B",
+    "explanation": "The Constituent Assembly of India was formed in December 1946 under the Cabinet Mission Plan."
+  },
+  {
+    "id": 81,
+    "category": "Indian History & Freedom Movement",
+    "question": "Prithviraj Chauhan was defeated in which battle?",
+    "options": ["A. First Battle of Panipat", "B. First Battle of Tarain", "C. Second Battle of Tarain", "D. Battle of Chandawar"],
+    "answer": "C",
+    "explanation": "Prithviraj Chauhan was defeated by Muhammad of Ghor in the Second Battle of Tarain in 1192."
+  },
+  {
+    "id": 82,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Kheda Satyagraha of 1918 was related to?",
+    "options": ["A. Mill workers", "B. Farmers' tax relief", "C. Indigo cultivation", "D. Salt tax"],
+    "answer": "B",
+    "explanation": "The Kheda Satyagraha (1918) led by Gandhi demanded remission of land revenue due to crop failure."
+  },
+  {
+    "id": 83,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Delhi Durbar of 1911 was held during the reign of which British monarch?",
+    "options": ["A. Queen Victoria", "B. Edward VII", "C. George V", "D. George VI"],
+    "answer": "C",
+    "explanation": "The Delhi Durbar of 1911 was held to celebrate the coronation of King George V."
+  },
+  {
+    "id": 84,
+    "category": "Indian History & Freedom Movement",
+    "question": "Which Indian leader was deported to Mandalay (Burma) by the British?",
+    "options": ["A. Mahatma Gandhi", "B. Bal Gangadhar Tilak", "C. Bipin Chandra Pal", "D. Lala Lajpat Rai"],
+    "answer": "D",
+    "explanation": "Lala Lajpat Rai was deported to Mandalay, Burma in 1907 without trial."
+  },
+  {
+    "id": 85,
+    "category": "Indian History & Freedom Movement",
+    "question": "The 'Servants of India Society' was founded by?",
+    "options": ["A. Bal Gangadhar Tilak", "B. Gopal Krishna Gokhale", "C. Dadabhai Naoroji", "D. Aurobindo Ghose"],
+    "answer": "B",
+    "explanation": "Gopal Krishna Gokhale founded the Servants of India Society in 1905 in Pune."
+  },
+  {
+    "id": 86,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who is known as the 'Grand Old Man of India'?",
+    "options": ["A. Gopal Krishna Gokhale", "B. Surendranath Banerjee", "C. Dadabhai Naoroji", "D. Bal Gangadhar Tilak"],
+    "answer": "C",
+    "explanation": "Dadabhai Naoroji was called the 'Grand Old Man of India'."
+  },
+  {
+    "id": 87,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Gadar Conspiracy Case of 1915 was related to which organization?",
+    "options": ["A. INC", "B. Ghadar Party", "C. Anushilan Samiti", "D. Hindu Mahasabha"],
+    "answer": "B",
+    "explanation": "The Ghadar Conspiracy of 1915 was carried out by members of the Ghadar Party attempting to incite a mutiny."
+  },
+  {
+    "id": 88,
+    "category": "Indian History & Freedom Movement",
+    "question": "The famous Chittagong Armoury Raid was led by?",
+    "options": ["A. Bhagat Singh", "B. Surya Sen", "C. Khudiram Bose", "D. Bagha Jatin"],
+    "answer": "B",
+    "explanation": "Surya Sen (Masterda) led the Chittagong Armoury Raid on April 18, 1930."
+  },
+  {
+    "id": 89,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was the youngest Indian to become President of the INC?",
+    "options": ["A. Jawaharlal Nehru", "B. Abul Kalam Azad", "C. Subhas Chandra Bose", "D. Bal Gangadhar Tilak"],
+    "answer": "B",
+    "explanation": "Maulana Abul Kalam Azad became the youngest President of INC at age 35 in 1923."
+  },
+  {
+    "id": 90,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Vernacular Press Act was enacted in which year?",
+    "options": ["A. 1876", "B. 1878", "C. 1880", "D. 1882"],
+    "answer": "B",
+    "explanation": "The Vernacular Press Act was enacted in 1878 by Lord Lytton to suppress Indian-language newspapers."
+  },
+  {
+    "id": 91,
+    "category": "Indian History & Freedom Movement",
+    "question": "Bhagat Singh threw a bomb in the Central Legislative Assembly on which date?",
+    "options": ["A. April 8, 1929", "B. March 23, 1929", "C. January 26, 1929", "D. April 13, 1929"],
+    "answer": "A",
+    "explanation": "Bhagat Singh and Batukeshwar Dutt threw bombs in the Central Legislative Assembly on April 8, 1929."
+  },
+  {
+    "id": 92,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Regulating Act of 1773 established a Supreme Court at?",
+    "options": ["A. Bombay", "B. Calcutta", "C. Madras", "D. Delhi"],
+    "answer": "B",
+    "explanation": "The Regulating Act of 1773 established the Supreme Court at Calcutta (Fort William)."
+  },
+  {
+    "id": 93,
+    "category": "Indian History & Freedom Movement",
+    "question": "Which Indian leader was called 'Mahamana'?",
+    "options": ["A. Gopal Krishna Gokhale", "B. Madan Mohan Malaviya", "C. Bal Gangadhar Tilak", "D. Surendranath Banerjea"],
+    "answer": "B",
+    "explanation": "Madan Mohan Malaviya was called 'Mahamana' and he founded Banaras Hindu University in 1916."
+  },
+  {
+    "id": 94,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who assassinated British officer John Saunders in 1928?",
+    "options": ["A. Ram Prasad Bismil", "B. Bhagat Singh", "C. Chandra Shekhar Azad", "D. Sachindra Nath Sanyal"],
+    "answer": "B",
+    "explanation": "Bhagat Singh, along with Rajguru and Chandra Shekhar Azad, assassinated John Saunders on December 17, 1928, in revenge for Lala Lajpat Rai's death."
+  },
+  {
+    "id": 95,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Treaty of Amritsar (1809) was signed between?",
+    "options": ["A. British and Marathas", "B. British and Ranjit Singh", "C. British and Nawab of Awadh", "D. British and Nizam of Hyderabad"],
+    "answer": "B",
+    "explanation": "The Treaty of Amritsar (1809) was between the British and Maharaja Ranjit Singh, defining the Sutlej River as the boundary."
+  },
+  {
+    "id": 96,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was called 'Frontier Gandhi'?",
+    "options": ["A. Abdul Ghaffar Khan", "B. Muhammad Ali Jinnah", "C. Sir Syed Ahmad Khan", "D. Abul Kalam Azad"],
+    "answer": "A",
+    "explanation": "Khan Abdul Ghaffar Khan was called 'Frontier Gandhi' or Sarhadi Gandhi for his nonviolent freedom struggle."
+  },
+  {
+    "id": 97,
+    "category": "Indian History & Freedom Movement",
+    "question": "The famous 'Lahore Conspiracy Case' of 1929-31 primarily involved?",
+    "options": ["A. Ghadar Party members", "B. Bhagat Singh and associates", "C. INC leaders", "D. Muslim League leaders"],
+    "answer": "B",
+    "explanation": "The Lahore Conspiracy Case involved Bhagat Singh, Rajguru, and Sukhdev for the murder of British officer John Saunders."
+  },
+  {
+    "id": 98,
+    "category": "Indian History & Freedom Movement",
+    "question": "The East India Company was established in which year?",
+    "options": ["A. 1598", "B. 1600", "C. 1605", "D. 1612"],
+    "answer": "B",
+    "explanation": "The British East India Company was established by Royal Charter on December 31, 1600."
+  },
+  {
+    "id": 99,
+    "category": "Indian History & Freedom Movement",
+    "question": "Rani Laxmibai was the queen of which princely state?",
+    "options": ["A. Awadh", "B. Gwalior", "C. Jhansi", "D. Indore"],
+    "answer": "C",
+    "explanation": "Rani Lakshmi Bai was the queen of Jhansi who fought bravely against the British in the 1857 rebellion."
+  },
+  {
+    "id": 100,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Indian Civil Service (ICS) examinations were first opened to Indians in which year?",
+    "options": ["A. 1853", "B. 1858", "C. 1864", "D. 1878"],
+    "answer": "A",
+    "explanation": "After the Charter Act of 1853, the ICS examinations were opened to all British subjects including Indians."
+  },
+  {
+    "id": 101,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Alipore Bomb Case (1908) involved which revolutionary?",
+    "options": ["A. Bhagat Singh", "B. Aurobindo Ghose", "C. Khudiram Bose", "D. Suresh Chakravarti"],
+    "answer": "B",
+    "explanation": "Aurobindo Ghose was accused in the Alipore Bomb Case (1908) but was acquitted."
+  },
+  {
+    "id": 102,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who founded the 'Theosophical Society' that was later based in Adyar, India?",
+    "options": ["A. Annie Besant", "B. Helena Blavatsky", "C. Henry Steel Olcott", "D. Both B and C"],
+    "answer": "D",
+    "explanation": "The Theosophical Society was co-founded by Helena Blavatsky and Henry Steel Olcott in New York in 1875."
+  },
+  {
+    "id": 103,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Azamgarh Declaration was issued by?",
+    "options": ["A. Mahatma Gandhi", "B. Jawaharlal Nehru", "C. Subhas Chandra Bose", "D. V.D. Savarkar"],
+    "answer": "C",
+    "explanation": "The Azamgarh Proclamation was issued by the INA forces under Subhas Chandra Bose in 1944."
+  },
+  {
+    "id": 104,
+    "category": "Indian History & Freedom Movement",
+    "question": "Khudiram Bose was executed for?",
+    "options": ["A. Muzaffarpur bomb case", "B. Lahore conspiracy case", "C. Alipore bomb case", "D. Kakori train robbery"],
+    "answer": "A",
+    "explanation": "Khudiram Bose was hanged at age 18 for the Muzaffarpur bomb case (1908), throwing a bomb at a carriage mistaken for a British judge."
+  },
+  {
+    "id": 105,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was the Viceroy when the Quit India Movement was launched?",
+    "options": ["A. Lord Wavell", "B. Lord Linlithgow", "C. Lord Mountbatten", "D. Lord Irwin"],
+    "answer": "B",
+    "explanation": "Lord Linlithgow was the Viceroy of India when the Quit India Movement was launched in 1942."
+  },
+  {
+    "id": 106,
+    "category": "Indian History & Freedom Movement",
+    "question": "The 'Direct Action Day' was observed on August 16, 1946 by?",
+    "options": ["A. Indian National Congress", "B. All India Muslim League", "C. Hindu Mahasabha", "D. Communist Party of India"],
+    "answer": "B",
+    "explanation": "The All India Muslim League observed 'Direct Action Day' on August 16, 1946 which led to the Calcutta riots."
+  },
+  {
+    "id": 107,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Cripps Mission visited India in which year?",
+    "options": ["A. 1940", "B. 1941", "C. 1942", "D. 1943"],
+    "answer": "C",
+    "explanation": "Sir Stafford Cripps visited India in March 1942 with the Cripps Mission proposals."
+  },
+  {
+    "id": 108,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who wrote the book 'Poverty and Un-British Rule in India'?",
+    "options": ["A. Gopal Krishna Gokhale", "B. Dadabhai Naoroji", "C. Romesh Chunder Dutt", "D. M.G. Ranade"],
+    "answer": "B",
+    "explanation": "Dadabhai Naoroji wrote 'Poverty and Un-British Rule in India' (1901), presenting the 'drain theory'."
+  },
+  {
+    "id": 109,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Indian Army mutiny at the Royal Indian Navy started in which year?",
+    "options": ["A. 1944", "B. 1945", "C. 1946", "D. 1947"],
+    "answer": "C",
+    "explanation": "The Royal Indian Navy Mutiny (also called the 1946 Royal Indian Navy Mutiny) started in February 1946."
+  },
+  {
+    "id": 110,
+    "category": "Indian History & Freedom Movement",
+    "question": "What was the main objective of the Civil Disobedience Movement (1930)?",
+    "options": ["A. To demand Dominion Status", "B. To achieve complete independence", "C. To protest against the Rowlatt Act", "D. To resist specific British laws including salt tax"],
+    "answer": "D",
+    "explanation": "The Civil Disobedience Movement (1930) aimed at resisting specific British laws, starting with the Salt March."
+  },
+  {
+    "id": 111,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Anushilan Samiti was an early revolutionary organization based in?",
+    "options": ["A. Punjab", "B. Maharashtra", "C. Bengal", "D. Uttar Pradesh"],
+    "answer": "C",
+    "explanation": "The Anushilan Samiti was a revolutionary organization founded in Bengal in 1902."
+  },
+  {
+    "id": 112,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Gandhi-Irwin Pact of 1931 led to the suspension of which movement?",
+    "options": ["A. Non-Cooperation Movement", "B. Civil Disobedience Movement", "C. Quit India Movement", "D. Swadeshi Movement"],
+    "answer": "B",
+    "explanation": "The Gandhi-Irwin Pact (March 1931) led to the suspension of the Civil Disobedience Movement."
+  },
+  {
+    "id": 113,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was the first Indian to serve as the President of United Nations General Assembly?",
+    "options": ["A. V.K. Krishna Menon", "B. Vijaya Lakshmi Pandit", "C. S. Radhakrishnan", "D. Jawaharlal Nehru"],
+    "answer": "B",
+    "explanation": "Vijaya Lakshmi Pandit became the first woman (and first Indian) President of the United Nations General Assembly in 1953."
+  },
+  {
+    "id": 114,
+    "category": "Indian History & Freedom Movement",
+    "question": "Lord Macaulay's Minute on Education (1835) advocated?",
+    "options": ["A. Promotion of Indian languages", "B. Sanskrit education", "C. English as the medium of instruction", "D. Persian language education"],
+    "answer": "C",
+    "explanation": "Lord Macaulay's Minute of 1835 argued for English as the medium of higher education in India."
+  },
+  {
+    "id": 115,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Ilbert Bill Controversy of 1883 was related to?",
+    "options": ["A. Land reforms", "B. Right of Indian judges to try European criminals", "C. Press freedom", "D. Revenue collection"],
+    "answer": "B",
+    "explanation": "The Ilbert Bill aimed to allow Indian judges to try British subjects, causing significant controversy among Europeans."
+  },
+  {
+    "id": 116,
+    "category": "Indian History & Freedom Movement",
+    "question": "Sarojini Naidu is also known by which title?",
+    "options": ["A. Nightingale of India", "B. Mother of the Nation", "C. Lady of India", "D. Jewel of Bengal"],
+    "answer": "A",
+    "explanation": "Sarojini Naidu was known as the 'Nightingale of India' for her poetry."
+  },
+  {
+    "id": 117,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Kakori Train Robbery was carried out in which year?",
+    "options": ["A. 1924", "B. 1925", "C. 1926", "D. 1927"],
+    "answer": "B",
+    "explanation": "The Kakori Conspiracy (Train Robbery) was carried out on August 9, 1925 by Ram Prasad Bismil and associates."
+  },
+  {
+    "id": 118,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was the political guru of Mahatma Gandhi?",
+    "options": ["A. Dadabhai Naoroji", "B. Gopal Krishna Gokhale", "C. Bal Gangadhar Tilak", "D. Aurobindo Ghose"],
+    "answer": "B",
+    "explanation": "Gopal Krishna Gokhale was Gandhi's political mentor and idol."
+  },
+  {
+    "id": 119,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Wavell Plan and Shimla Conference were held in which year?",
+    "options": ["A. 1944", "B. 1945", "C. 1946", "D. 1947"],
+    "answer": "B",
+    "explanation": "The Shimla Conference was held in June 1945 to discuss the Wavell Plan."
+  },
+  {
+    "id": 120,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Indian Constitution was adopted on?",
+    "options": ["A. August 15, 1947", "B. January 26, 1950", "C. November 26, 1949", "D. January 26, 1949"],
+    "answer": "C",
+    "explanation": "The Constitution of India was adopted on November 26, 1949 and came into effect on January 26, 1950."
+  },
+  {
+    "id": 121,
+    "category": "Indian History & Freedom Movement",
+    "question": "The 'Young Bengal Movement' was led by?",
+    "options": ["A. Raja Ram Mohan Roy", "B. Henry Louis Vivian Derozio", "C. Ishwar Chandra Vidyasagar", "D. Keshab Chandra Sen"],
+    "answer": "B",
+    "explanation": "Henry Louis Vivian Derozio, a teacher at Hindu College, Calcutta, led the Young Bengal movement."
+  },
+  {
+    "id": 122,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was known as 'Swadeshi Saint'?",
+    "options": ["A. Mahatma Gandhi", "B. Bipin Chandra Pal", "C. Bal Gangadhar Tilak", "D. G.K. Gokhale"],
+    "answer": "B",
+    "explanation": "Bipin Chandra Pal was a strong advocate of the Swadeshi Movement and was known as the 'Swadeshi Saint'."
+  },
+  {
+    "id": 123,
+    "category": "Indian History & Freedom Movement",
+    "question": "The historic Lucknow Pact of 1916 was for?",
+    "options": ["A. Joint representation for Hindu-Muslim unity", "B. Division of power between provinces", "C. Agreement on national language", "D. Demand for self-government from Britain"],
+    "answer": "A",
+    "explanation": "The Lucknow Pact (1916) brought together INC and Muslim League for Hindu-Muslim unity in demanding constitutional reforms."
+  },
+  {
+    "id": 124,
+    "category": "Indian History & Freedom Movement",
+    "question": "Mahatma Gandhi first applied the technique of Satyagraha in?",
+    "options": ["A. India", "B. England", "C. South Africa", "D. France"],
+    "answer": "C",
+    "explanation": "Gandhi first used Satyagraha in South Africa against discriminatory laws."
+  },
+  {
+    "id": 125,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who started the 'Self-Respect Movement' in Tamil Nadu?",
+    "options": ["A. E.V. Ramasamy Periyar", "B. Mahatma Gandhi", "C. B.R. Ambedkar", "D. Jyotirao Phule"],
+    "answer": "A",
+    "explanation": "E.V. Ramasamy (Periyar) started the Self-Respect Movement in 1925 against Brahmin domination."
+  },
+  {
+    "id": 126,
+    "category": "Indian History & Freedom Movement",
+    "question": "The first session of the All India Kisan Sabha was held in which year?",
+    "options": ["A. 1934", "B. 1936", "C. 1938", "D. 1940"],
+    "answer": "B",
+    "explanation": "The All India Kisan Sabha (All India Peasants Union) was formed in April 1936 in Lucknow."
+  },
+  {
+    "id": 127,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Indian National Army was first formed under which leader?",
+    "options": ["A. Subhas Chandra Bose", "B. Mohan Singh", "C. Shah Nawaz Khan", "D. Rash Behari Bose"],
+    "answer": "B",
+    "explanation": "The Indian National Army was first formed under Mohan Singh in 1942, before being reorganized by Subhas Chandra Bose."
+  },
+  {
+    "id": 128,
+    "category": "Indian History & Freedom Movement",
+    "question": "The August Offer of 1940 was made by which British official?",
+    "options": ["A. Lord Wavell", "B. Lord Linlithgow", "C. Winston Churchill", "D. Stafford Cripps"],
+    "answer": "B",
+    "explanation": "Viceroy Lord Linlithgow made the August Offer in 1940, promising Dominion Status after WWI."
+  },
+  {
+    "id": 129,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who shot and killed Curzon Wyllie in London in 1909?",
+    "options": ["A. V.D. Savarkar", "B. Madan Lal Dhingra", "C. Shyamji Krishna Varma", "D. Lala Har Dayal"],
+    "answer": "B",
+    "explanation": "Madan Lal Dhingra shot and killed Sir Curzon Wyllie at the Imperial Institute in London on July 1, 1909."
+  },
+  {
+    "id": 130,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Birsa Munda Revolt was against?",
+    "options": ["A. British land policies and missionaries", "B. Muslim rulers", "C. Zamindars", "D. Money lenders only"],
+    "answer": "A",
+    "explanation": "Birsa Munda led the 'Ulgulan' (Great Tumult) revolt in 1899-1900 against British land alienation and missionary activities."
+  },
+  {
+    "id": 131,
+    "category": "Indian History & Freedom Movement",
+    "question": "The 'Tebhaga Movement' of 1946-47 was a peasant movement in?",
+    "options": ["A. Bihar", "B. Andhra Pradesh", "C. Bengal", "D. Punjab"],
+    "answer": "C",
+    "explanation": "The Tebhaga Movement (1946-47) was a peasant movement in Bengal demanding two-thirds share of the crop for sharecroppers."
+  },
+  {
+    "id": 132,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who organized the Ganapati Festival as a national festival?",
+    "options": ["A. Gopal Krishna Gokhale", "B. Bal Gangadhar Tilak", "C. Lala Lajpat Rai", "D. Bipin Chandra Pal"],
+    "answer": "B",
+    "explanation": "Bal Gangadhar Tilak organized the Ganapati (Ganesh Chaturthi) Festival as a mass national gathering in 1893."
+  },
+  {
+    "id": 133,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Jinnah-Gandhi talks of 1944 failed because of?",
+    "options": ["A. Language differences", "B. Disagreement on the basis of partition", "C. British interference", "D. Congress rejection"],
+    "answer": "B",
+    "explanation": "The Jinnah-Gandhi talks of 1944 failed mainly due to disagreement on the C.R. Formula and the basis for India's partition."
+  },
+  {
+    "id": 134,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Santhal Rebellion (1855-56) was led by?",
+    "options": ["A. Birsa Munda", "B. Sidhu and Kanhu Murmu", "C. Tirot Singh", "D. Mangal Pandey"],
+    "answer": "B",
+    "explanation": "The Santhal Rebellion was led by brothers Sidhu and Kanhu Murmu against the British and zamindars."
+  },
+  {
+    "id": 135,
+    "category": "Indian History & Freedom Movement",
+    "question": "The first electric train in India ran between?",
+    "options": ["A. Bombay VT and Kurla", "B. Delhi and Agra", "C. Calcutta and Howrah", "D. Madras and Tambaram"],
+    "answer": "A",
+    "explanation": "The first electric train in India ran between Bombay VT (now CSMT) and Kurla on February 3, 1925."
+  },
+  {
+    "id": 136,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Vernacular Press Act (1878) was passed during the Viceroyalty of?",
+    "options": ["A. Lord Ripon", "B. Lord Lytton", "C. Lord Mayo", "D. Lord Northbrook"],
+    "answer": "B",
+    "explanation": "Lord Lytton passed the Vernacular Press Act in 1878 to suppress native press criticism."
+  },
+  {
+    "id": 137,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was the first Indian woman to preside over the Indian National Congress?",
+    "options": ["A. Sarojini Naidu", "B. Annie Besant", "C. Vijaya Lakshmi Pandit", "D. Indira Gandhi"],
+    "answer": "B",
+    "explanation": "Annie Besant was the first woman to preside over the INC in 1917. Sarojini Naidu was the first Indian woman president in 1925."
+  },
+  {
+    "id": 138,
+    "category": "Indian History & Freedom Movement",
+    "question": "Lord Ripon's Resolution of 1882 is associated with?",
+    "options": ["A. Education reforms", "B. Local self-government", "C. Vernacular press", "D. Peasant rights"],
+    "answer": "B",
+    "explanation": "Lord Ripon's Resolution of 1882 established local self-government in India."
+  },
+  {
+    "id": 139,
+    "category": "Indian History & Freedom Movement",
+    "question": "The partition of India led to the creation of how many countries?",
+    "options": ["A. 2", "B. 3", "C. 4", "D. 5"],
+    "answer": "A",
+    "explanation": "The partition of India in 1947 created two independent nations: India and Pakistan."
+  },
+  {
+    "id": 140,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who is referred to as 'Andhra Kesari'?",
+    "options": ["A. T. Prakasam", "B. N.G. Ranga", "C. P.V. Narasimha Rao", "D. Pingali Venkayya"],
+    "answer": "A",
+    "explanation": "T. Prakasam was called 'Andhra Kesari' (Lion of Andhra) for his courageous participation in the freedom struggle."
+  },
+  {
+    "id": 141,
+    "category": "Indian History & Freedom Movement",
+    "question": "The headquarters of the Indian National Army (Azad Hind) was in?",
+    "options": ["A. Germany", "B. Japan", "C. Singapore", "D. Burma"],
+    "answer": "C",
+    "explanation": "The headquarters of the Indian National Army was in Singapore (then under Japanese control)."
+  },
+  {
+    "id": 142,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who designed the national flag of India?",
+    "options": ["A. Mahatma Gandhi", "B. Jawaharlal Nehru", "C. Pingali Venkayya", "D. B.R. Ambedkar"],
+    "answer": "C",
+    "explanation": "Pingali Venkayya designed the Indian national flag (in its original form) that was adopted by the INC."
+  },
+  {
+    "id": 143,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was known as 'Mahatma' before Gandhi?",
+    "options": ["A. Bal Gangadhar Tilak", "B. Gopal Krishna Gokhale", "C. Aurobindo Ghose", "D. Jyotirao Phule"],
+    "answer": "D",
+    "explanation": "Jyotirao Phule was given the title 'Mahatma' by his followers in 1888."
+  },
+  {
+    "id": 144,
+    "category": "Indian History & Freedom Movement",
+    "question": "The 'Poona Sarvajanik Sabha' was founded in 1870 by?",
+    "options": ["A. Bal Gangadhar Tilak", "B. Gopal Krishna Gokhale", "C. M.G. Ranade", "D. Jyotirao Phule"],
+    "answer": "C",
+    "explanation": "M.G. Ranade (Mahadev Govind Ranade) co-founded the Poona Sarvajanik Sabha in 1870."
+  },
+  {
+    "id": 145,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Indian Independence Act of 1947 was effective from?",
+    "options": ["A. June 3, 1947", "B. August 14, 1947", "C. August 15, 1947", "D. Both B and C"],
+    "answer": "D",
+    "explanation": "The Indian Independence Act was effective from August 14, 1947 (Pakistan) and August 15, 1947 (India)."
+  },
+  {
+    "id": 146,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was deported to Cellular Jail in Andaman and Nicobar Islands multiple times?",
+    "options": ["A. Bhagat Singh", "B. V.D. Savarkar", "C. Bal Gangadhar Tilak", "D. Aurobindo Ghose"],
+    "answer": "B",
+    "explanation": "V.D. Savarkar was sentenced to the Cellular Jail (Kala Pani) in Andamans for 50 years."
+  },
+  {
+    "id": 147,
+    "category": "Indian History & Freedom Movement",
+    "question": "The 'Charter Act of 1813' ended the trade monopoly of?",
+    "options": ["A. Portuguese East India Company", "B. Dutch East India Company", "C. British East India Company", "D. French East India Company"],
+    "answer": "C",
+    "explanation": "The Charter Act of 1813 ended the British East India Company's monopoly on trade in India (except tea and trade with China)."
+  },
+  {
+    "id": 148,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was the first woman to become the Chief Minister of an Indian state?",
+    "options": ["A. Indira Gandhi", "B. Sucheta Kriplani", "C. Vijaya Lakshmi Pandit", "D. Sarojini Naidu"],
+    "answer": "B",
+    "explanation": "Sucheta Kriplani became the first woman Chief Minister of an Indian state (Uttar Pradesh) in 1963."
+  },
+  {
+    "id": 149,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Haripura Session of INC (1938) elected which President?",
+    "options": ["A. Jawaharlal Nehru", "B. Subhas Chandra Bose", "C. Abul Kalam Azad", "D. Rajendra Prasad"],
+    "answer": "B",
+    "explanation": "Subhas Chandra Bose was elected President of the INC at the Haripura session in 1938."
+  },
+  {
+    "id": 150,
+    "category": "Indian History & Freedom Movement",
+    "question": "The 'Wardha Scheme' of Basic Education (1937) was propounded by?",
+    "options": ["A. Jawaharlal Nehru", "B. Mahatma Gandhi", "C. Zakir Husain", "D. Maulana Azad"],
+    "answer": "B",
+    "explanation": "The Wardha Scheme of Basic Education (Nai Talim) was propounded by Mahatma Gandhi in 1937."
+  },
+  {
+    "id": 151,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Swarajist Party was founded in 1922-23 by?",
+    "options": ["A. Gandhi and Nehru", "B. C.R. Das and Motilal Nehru", "C. Tilak and Pal", "D. Gokhale and Ranade"],
+    "answer": "B",
+    "explanation": "Chittaranjan Das and Motilal Nehru founded the Swaraj Party in 1922-23 within the INC."
+  },
+  {
+    "id": 152,
+    "category": "Indian History & Freedom Movement",
+    "question": "The 'Moderate' leaders of INC believed in?",
+    "options": ["A. Armed revolution", "B. Constitutional methods and petitions", "C. Non-cooperation", "D. Mass civil disobedience"],
+    "answer": "B",
+    "explanation": "The Moderate leaders of INC (pre-1905) believed in constitutional agitation, petitions, and peaceful methods."
+  },
+  {
+    "id": 153,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Attlee Declaration regarding Indian independence was made in?",
+    "options": ["A. January 1947", "B. February 1947", "C. March 1947", "D. June 1947"],
+    "answer": "B",
+    "explanation": "Clement Attlee's declaration that Britain would transfer power to India no later than June 1948 was made in February 1947."
+  },
+  {
+    "id": 154,
+    "category": "Indian History & Freedom Movement",
+    "question": "Sardar Bhagat Singh was born in which state?",
+    "options": ["A. Punjab", "B. Haryana", "C. Rajasthan", "D. Uttar Pradesh"],
+    "answer": "A",
+    "explanation": "Bhagat Singh was born on September 28, 1907 in Banga, Lyallpur district, Punjab (now in Pakistan)."
+  },
+  {
+    "id": 155,
+    "category": "Indian History & Freedom Movement",
+    "question": "Vinoba Bhave was associated with which movement?",
+    "options": ["A. Non-Cooperation Movement", "B. Bhoodan Movement", "C. Bardoli Satyagraha", "D. Champaran Satyagraha"],
+    "answer": "B",
+    "explanation": "Vinoba Bhave launched the Bhoodan (land gift) Movement in 1951 to redistribute land to landless farmers."
+  },
+  {
+    "id": 156,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Indigo Revolt of Bengal (1859-60) was against?",
+    "options": ["A. British land revenue system", "B. Forced cultivation of indigo", "C. Import of British cloth", "D. Zamindari system"],
+    "answer": "B",
+    "explanation": "The Indigo Revolt (Nil Bidroho) of 1859-60 was by Bengali peasants against forced indigo cultivation by British planters."
+  },
+  {
+    "id": 157,
+    "category": "Indian History & Freedom Movement",
+    "question": "Bal Gangadhar Tilak was born in which state?",
+    "options": ["A. Gujarat", "B. Rajasthan", "C. Maharashtra", "D. Karnataka"],
+    "answer": "C",
+    "explanation": "Bal Gangadhar Tilak was born on July 23, 1856 in Ratnagiri, Maharashtra."
+  },
+  {
+    "id": 158,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who is known as 'Mother of Indian Revolution'?",
+    "options": ["A. Sarojini Naidu", "B. Annie Besant", "C. Madam Bhikaji Cama", "D. Kasturba Gandhi"],
+    "answer": "C",
+    "explanation": "Madam Bhikaji Cama is sometimes called the 'Mother of Indian Revolution' for her activism abroad."
+  },
+  {
+    "id": 159,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Battle of Buxar (1764) established British supremacy over?",
+    "options": ["A. Bengal only", "B. Oudh only", "C. Mughal Empire", "D. Bengal, Oudh, and Mughal Emperor"],
+    "answer": "D",
+    "explanation": "The Battle of Buxar (1764) was fought against the combined forces of Mir Qasim, Nawab of Oudh, and Mughal Emperor Shah Alam II."
+  },
+  {
+    "id": 160,
+    "category": "Indian History & Freedom Movement",
+    "question": "The two-nation theory was propounded by?",
+    "options": ["A. Muhammad Ali Jinnah", "B. Sir Syed Ahmad Khan", "C. Allama Iqbal", "D. Liaquat Ali Khan"],
+    "answer": "A",
+    "explanation": "Muhammad Ali Jinnah propounded the Two-Nation Theory, arguing Hindus and Muslims were two separate nations."
+  },
+  {
+    "id": 161,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Lahore Resolution of 1940 demanded?",
+    "options": ["A. Dominion Status for India", "B. Independent Muslim states in northwest and east India", "C. Joint Hindu-Muslim government", "D. Provincial autonomy"],
+    "answer": "B",
+    "explanation": "The Lahore Resolution (Pakistan Resolution) of 1940 demanded independent Muslim states in the northwest and east of India."
+  },
+  {
+    "id": 162,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who founded the 'Satyashodhak Samaj' in 1873?",
+    "options": ["A. B.R. Ambedkar", "B. Jyotirao Phule", "C. E.V. Ramasamy Periyar", "D. Narayana Guru"],
+    "answer": "B",
+    "explanation": "Jyotirao Phule founded the Satyashodhak Samaj (Society of Truth Seekers) in 1873 to fight caste discrimination."
+  },
+  {
+    "id": 163,
+    "category": "Indian History & Freedom Movement",
+    "question": "The great revolutionary Chandra Shekhar Azad died in which city?",
+    "options": ["A. Lahore", "B. Allahabad", "C. Delhi", "D. Kanpur"],
+    "answer": "B",
+    "explanation": "Chandra Shekhar Azad died on February 27, 1931 in Alfred Park, Allahabad, while fighting British police."
+  },
+  {
+    "id": 164,
+    "category": "Indian History & Freedom Movement",
+    "question": "The first Indian woman to win the Nobel Prize was?",
+    "options": ["A. Amartya Sen", "B. Mother Teresa", "C. Indira Gandhi", "D. Sarojini Naidu"],
+    "answer": "B",
+    "explanation": "Mother Teresa won the Nobel Peace Prize in 1979 (she was Albanian-born but an Indian citizen)."
+  },
+  {
+    "id": 165,
+    "category": "Indian History & Freedom Movement",
+    "question": "Mahatma Gandhi launched the Individual Civil Disobedience in which year?",
+    "options": ["A. 1939", "B. 1940", "C. 1941", "D. 1942"],
+    "answer": "B",
+    "explanation": "Gandhi launched Individual Civil Disobedience Movement in October 1940 with Vinoba Bhave as the first satyagrahi."
+  },
+  {
+    "id": 166,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Constituent Assembly of India was chaired by?",
+    "options": ["A. Jawaharlal Nehru", "B. B.R. Ambedkar", "C. Rajendra Prasad", "D. Maulana Azad"],
+    "answer": "C",
+    "explanation": "Dr. Rajendra Prasad was elected as the President of the Constituent Assembly of India."
+  },
+  {
+    "id": 167,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was the Chairman of the Drafting Committee of the Indian Constitution?",
+    "options": ["A. Rajendra Prasad", "B. Jawaharlal Nehru", "C. B.R. Ambedkar", "D. Sardar Patel"],
+    "answer": "C",
+    "explanation": "Dr. B.R. Ambedkar was the Chairman of the Drafting Committee of the Indian Constitution."
+  },
+  {
+    "id": 168,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who is known as the 'Grand Old Man of Punjab'?",
+    "options": ["A. Bhagat Singh", "B. Lala Lajpat Rai", "C. Gopal Krishna Gokhale", "D. Bal Gangadhar Tilak"],
+    "answer": "B",
+    "explanation": "Lala Lajpat Rai was also called the 'Grand Old Man of Punjab'."
+  },
+  {
+    "id": 169,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was the Governor General at the time of Sepoy Mutiny?",
+    "options": ["A. Lord Dalhousie", "B. Lord Canning", "C. Lord Elgin", "D. Lord Lawrence"],
+    "answer": "B",
+    "explanation": "Lord Canning was the Governor-General (later the first Viceroy) when the Sepoy Mutiny broke out in 1857."
+  },
+  {
+    "id": 170,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Ramprasad Bismil was executed for his role in which conspiracy?",
+    "options": ["A. Lahore Conspiracy Case", "B. Kakori Conspiracy Case", "C. Alipore Bomb Case", "D. Muzaffarpur Bomb Case"],
+    "answer": "B",
+    "explanation": "Ram Prasad Bismil was hanged for his role in the Kakori Conspiracy (Train Robbery) of 1925."
+  },
+  {
+    "id": 171,
+    "category": "Indian History & Freedom Movement",
+    "question": "Dadabhai Naoroji's 'Drain Theory' referred to?",
+    "options": ["A. Drainage of agricultural land", "B. Economic exploitation of India by Britain", "C. Irrigation problems in India", "D. Export of raw materials"],
+    "answer": "B",
+    "explanation": "Dadabhai Naoroji's Drain Theory argued that British colonialism drained India's wealth to Britain."
+  },
+  {
+    "id": 172,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who gave the title 'Mahatma' to Mohandas Gandhi?",
+    "options": ["A. Jawaharlal Nehru", "B. Gopal Krishna Gokhale", "C. Rabindranath Tagore", "D. Annie Besant"],
+    "answer": "C",
+    "explanation": "Rabindranath Tagore reportedly gave Gandhi the title 'Mahatma' (Great Soul)."
+  },
+  {
+    "id": 173,
+    "category": "Indian History & Freedom Movement",
+    "question": "The famous 'Tana Bhagat Movement' of Jharkhand was against?",
+    "options": ["A. British rule and Hindu social practices", "B. Christian missionaries", "C. Muslim zamindars", "D. Moneylenders"],
+    "answer": "A",
+    "explanation": "The Tana Bhagat Movement (1914) was a tribal religious and political movement against British rule and social inequalities."
+  },
+  {
+    "id": 174,
+    "category": "Indian History & Freedom Movement",
+    "question": "The 'Nagpur Session' of 1920 modified the constitution of INC to make what change?",
+    "options": ["A. Adopted Poorna Swaraj as goal", "B. Reorganized on linguistic basis and adopted non-cooperation", "C. Expelled extremists from INC", "D. Accepted the Montagu-Chelmsford reforms"],
+    "answer": "B",
+    "explanation": "The Nagpur Session (1920) reorganized the INC on a linguistic basis and officially adopted the Non-Cooperation Movement."
+  },
+  {
+    "id": 175,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who was the first Indian to be appointed to the Viceroy's Executive Council?",
+    "options": ["A. S.P. Sinha", "B. Gopal Krishna Gokhale", "C. Pherozeshah Mehta", "D. Surendranath Banerjea"],
+    "answer": "A",
+    "explanation": "S.P. Sinha (Satyendra Prasanna Sinha) was the first Indian to be appointed to the Viceroy's Executive Council in 1909."
+  },
+  {
+    "id": 176,
+    "category": "Indian History & Freedom Movement",
+    "question": "Keshab Chandra Sen was associated with which reform movement?",
+    "options": ["A. Arya Samaj", "B. Brahmo Samaj", "C. Prarthana Samaj", "D. Theosophical Society"],
+    "answer": "B",
+    "explanation": "Keshab Chandra Sen was a prominent leader of the Brahmo Samaj, leading the 'New Dispensation' faction."
+  },
+  {
+    "id": 177,
+    "category": "Indian History & Freedom Movement",
+    "question": "The Bahadur Shah Zafar, the last Mughal Emperor, was exiled to?",
+    "options": ["A. Andaman Islands", "B. Ceylon", "C. Rangoon (Burma)", "D. Singapore"],
+    "answer": "C",
+    "explanation": "Bahadur Shah Zafar, the last Mughal Emperor, was exiled to Rangoon (Burma) by the British after the 1857 revolt."
+  },
+  {
+    "id": 178,
+    "category": "Indian History & Freedom Movement",
+    "question": "Who started the Prarthana Samaj in 1867?",
+    "options": ["A. Gopal Krishna Gokhale", "B. Atmaram Pandurang", "C. M.G. Ranade", "D. Both B and C"],
+    "answer": "B",
+    "explanation": "Atmaram Pandurang founded the Prarthana Samaj in Bombay in 1867."
+  },
+  {
+    "id": 179,
+    "category": "Indian History & Freedom Movement",
+    "question": "Which event is called the first organized revolt against British rule in India?",
+    "options": ["A. Battle of Plassey 1757", "B. Vellore Mutiny 1806", "C. Sepoy Mutiny 1857", "D. Santhal Rebellion 1855"],
+    "answer": "B",
+    "explanation": "The Vellore Mutiny (1806) is considered the first organized revolt of Indian soldiers against British rule."
+  },
+  {
+    "id": 180,
+    "category": "Indian History & Freedom Movement",
+    "question": "The 'Indian Councils Act 1861' gave Indians their first taste of legislative council participation. Who first introduced this?",
+    "options": ["A. Lord Canning", "B. Lord Elgin", "C. Lord Lawrence", "D. Lord Mayo"],
+    "answer": "A",
+    "explanation": "Lord Canning, as the first Viceroy, oversaw the Indian Councils Act 1861 that included Indian members in legislative councils."
+  },
+  {
+    "id": 181,
+    "category": "Indian Geography",
+    "question": "Which is the largest state of India by area?",
+    "options": ["A. Madhya Pradesh", "B. Uttar Pradesh", "C. Rajasthan", "D. Maharashtra"],
+    "answer": "C",
+    "explanation": "Rajasthan is the largest state of India by area (342,239 sq km)."
+  },
+  {
+    "id": 182,
+    "category": "Indian Geography",
+    "question": "The Tropic of Cancer passes through how many Indian states?",
+    "options": ["A. 6", "B. 7", "C. 8", "D. 9"],
+    "answer": "C",
+    "explanation": "The Tropic of Cancer passes through 8 Indian states: Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, WB, Tripura, and Mizoram."
+  },
+  {
+    "id": 183,
+    "category": "Indian Geography",
+    "question": "Which river is known as the 'Sorrow of Bihar'?",
+    "options": ["A. Ganga", "B. Son", "C. Kosi", "D. Gandak"],
+    "answer": "C",
+    "explanation": "The Kosi River is known as the 'Sorrow of Bihar' due to its frequent flooding and course changes."
+  },
+  {
+    "id": 184,
+    "category": "Indian Geography",
+    "question": "Mount Everest is located in which country?",
+    "options": ["A. India", "B. China", "C. Nepal", "D. On the China-Nepal border"],
+    "answer": "D",
+    "explanation": "Mount Everest lies on the border between Nepal (south) and Tibet/China (north)."
+  },
+  {
+    "id": 185,
+    "category": "Indian Geography",
+    "question": "Which is the longest river of India?",
+    "options": ["A. Yamuna", "B. Godavari", "C. Ganga", "D. Brahmaputra"],
+    "answer": "C",
+    "explanation": "The Ganga (Ganges) is the longest river in India, flowing approximately 2,525 km."
+  },
+  {
+    "id": 186,
+    "category": "Indian Geography",
+    "question": "The Deccan Plateau is bounded on the east by?",
+    "options": ["A. Western Ghats", "B. Eastern Ghats", "C. Vindhya Range", "D. Satpura Range"],
+    "answer": "B",
+    "explanation": "The Deccan Plateau is bounded on the east by the Eastern Ghats."
+  },
+  {
+    "id": 187,
+    "category": "Indian Geography",
+    "question": "Which city is known as the 'Silicon Valley of India'?",
+    "options": ["A. Mumbai", "B. Hyderabad", "C. Pune", "D. Bengaluru"],
+    "answer": "D",
+    "explanation": "Bengaluru (Bangalore) is known as the 'Silicon Valley of India' due to its thriving IT industry."
+  },
+  {
+    "id": 188,
+    "category": "Indian Geography",
+    "question": "The Strait of Malacca separates which two landmasses?",
+    "options": ["A. Sri Lanka and India", "B. Malay Peninsula and Sumatra", "C. Andaman and Nicobar Islands", "D. India and Burma"],
+    "answer": "B",
+    "explanation": "The Strait of Malacca separates the Malay Peninsula from the Indonesian island of Sumatra."
+  },
+  {
+    "id": 189,
+    "category": "Indian Geography",
+    "question": "India shares the longest international boundary with which country?",
+    "options": ["A. China", "B. Pakistan", "C. Bangladesh", "D. Nepal"],
+    "answer": "C",
+    "explanation": "India shares its longest international boundary with Bangladesh (approximately 4,156 km)."
+  },
+  {
+    "id": 190,
+    "category": "Indian Geography",
+    "question": "Which is the highest peak in India?",
+    "options": ["A. Kanchenjunga", "B. Nanda Devi", "C. K2", "D. Godwin Austen"],
+    "answer": "A",
+    "explanation": "Kanchenjunga (8,586 m) is the highest peak located entirely in India (on India-Nepal border)."
+  },
+  {
+    "id": 191,
+    "category": "Indian Geography",
+    "question": "Which state has the largest coastline in India?",
+    "options": ["A. Maharashtra", "B. Andhra Pradesh", "C. Tamil Nadu", "D. Gujarat"],
+    "answer": "D",
+    "explanation": "Gujarat has the longest coastline (approximately 1,600 km) among all Indian states."
+  },
+  {
+    "id": 192,
+    "category": "Indian Geography",
+    "question": "The Chilika Lake is located in which state?",
+    "options": ["A. Andhra Pradesh", "B. West Bengal", "C. Odisha", "D. Kerala"],
+    "answer": "C",
+    "explanation": "Chilika Lake, the largest coastal lagoon in India, is located in Odisha."
+  },
+  {
+    "id": 193,
+    "category": "Indian Geography",
+    "question": "India's standard meridian (82.5°E) passes through which city?",
+    "options": ["A. Bhopal", "B. Allahabad", "C. Mirzapur", "D. Varanasi"],
+    "answer": "C",
+    "explanation": "India's standard meridian (82°30'E) passes near Mirzapur, Uttar Pradesh."
+  },
+  {
+    "id": 194,
+    "category": "Indian Geography",
+    "question": "The Brahmaputra river is known as 'Tsangpo' in?",
+    "options": ["A. India", "B. Bangladesh", "C. Nepal", "D. Tibet (China)"],
+    "answer": "D",
+    "explanation": "The Brahmaputra river is called 'Tsangpo' in Tibet (China) before entering India."
+  },
+  {
+    "id": 195,
+    "category": "Indian Geography",
+    "question": "Which city is the capital of Lakshadweep?",
+    "options": ["A. Port Blair", "B. Daman", "C. Kavaratti", "D. Minicoy"],
+    "answer": "C",
+    "explanation": "Kavaratti is the capital of the Union Territory of Lakshadweep."
+  },
+  {
+    "id": 196,
+    "category": "Indian Geography",
+    "question": "The 'Duars' plains are found in?",
+    "options": ["A. West Bengal and Assam", "B. Bihar and Jharkhand", "C. Sikkim and Nepal", "D. Uttar Pradesh"],
+    "answer": "A",
+    "explanation": "The Duars (meaning 'doors/passes') are a belt of plains at the foothills of Himalayas in West Bengal and Assam."
+  },
+  {
+    "id": 197,
+    "category": "Indian Geography",
+    "question": "The Konkan Coast stretches from?",
+    "options": ["A. Gujarat to Goa", "B. Mumbai to Goa", "C. Daman to Goa", "D. Goa to Kanyakumari"],
+    "answer": "C",
+    "explanation": "The Konkan Coast stretches from Daman (Gujarat-Maharashtra border) to Goa."
+  },
+  {
+    "id": 198,
+    "category": "Indian Geography",
+    "question": "Which is the deepest lake in India?",
+    "options": ["A. Chilika Lake", "B. Vembanad Lake", "C. Dal Lake", "D. Manasbal Lake"],
+    "answer": "D",
+    "explanation": "Manasbal Lake in Jammu & Kashmir is considered the deepest lake in India."
+  },
+  {
+    "id": 199,
+    "category": "Indian Geography",
+    "question": "The 'Rann of Kutch' is a seasonal salt marsh in which state?",
+    "options": ["A. Rajasthan", "B. Gujarat", "C. Maharashtra", "D. Sindh (Pakistan)"],
+    "answer": "B",
+    "explanation": "The Rann of Kutch is a seasonal salt marsh located in Gujarat, India."
+  },
+  {
+    "id": 200,
+    "category": "Indian Geography",
+    "question": "Which is the southernmost tip of India?",
+    "options": ["A. Kanyakumari", "B. Indira Point", "C. Rameshwaram", "D. Point Calimere"],
+    "answer": "B",
+    "explanation": "Indira Point (also called Pygmalion Point) in the Nicobar Islands is the southernmost tip of India."
+  }

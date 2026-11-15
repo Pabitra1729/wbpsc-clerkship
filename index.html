@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WBPSC Clerkship GK Quiz – Static GK & 1,816 Questions</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    :root {
+      --primary: #1a3c6e;
+      --primary-light: #2456a4;
+      --accent: #f5a623;
+      --accent2: #e84545;
+      --bg: #f0f4fa;
+      --card: #ffffff;
+      --text: #1e2a3a;
+      --muted: #6b7c93;
+      --success: #27ae60;
+      --error: #e84545;
+      --border: #d0dbe8;
+      --shadow: 0 4px 24px rgba(26,60,110,0.10);
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ─────────────────────────────────────────── */
+    .header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: #fff;
+      padding: 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    }
+    .header-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .header-logo {
+      width: 48px;
+      height: 48px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+    .header-titles { flex: 1; }
+    .header-title { font-size: 1.25rem; font-weight: 800; letter-spacing: .3px; }
+    .header-sub { font-size: .78rem; opacity: .82; margin-top: 2px; }
+    .header-badge {
+      background: var(--accent);
+      color: var(--primary);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: .78rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    /* ── LAYOUT ──────────────────────────────────────────── */
+    .app-shell {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 24px 20px;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+    @media(max-width: 960px) {
+      .app-shell { grid-template-columns: 1fr; padding: 16px; }
+      .sidebar { order: -1; }
+    }
+
+    /* ── SIDEBAR ─────────────────────────────────────────── */
+    .sidebar {
+      position: sticky;
+      top: 84px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      border: 1px solid var(--border);
+    }
+    .card-title {
+      font-size: .78rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    /* stats */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .stat-box {
+      background: var(--bg);
+      border-radius: 10px;
+      padding: 12px 8px;
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: .68rem;
+      color: var(--muted);
+      margin-top: 3px;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    /* score ring */
+    .score-ring-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .score-ring {
+      width: 90px;
+      height: 90px;
+    }
+    .score-pct {
+      font-size: 1.1rem;
+      font-weight: 800;
+      fill: var(--primary);
+    }
+    .score-ring-label {
+      font-size: .72rem;
+      color: var(--muted);
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    /* category list */
+    .cat-list { display: flex; flex-direction: column; gap: 6px; }
+    .cat-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border: none;
+      background: transparent;
+      border-radius: 8px;
+      cursor: pointer;
+      text-align: left;
+      transition: background .15s;
+      width: 100%;
+    }
+    .cat-btn:hover { background: var(--bg); }
+    .cat-btn.active { background: #e8f0fb; }
+    .cat-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .cat-name { font-size: .8rem; font-weight: 600; color: var(--text); flex: 1; }
+    .cat-count {
+      font-size: .72rem;
+      background: var(--bg);
+      border-radius: 10px;
+      padding: 2px 7px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    /* ── MAIN CONTENT ────────────────────────────────────── */
+    .main { display: flex; flex-direction: column; gap: 20px; }
+
+    /* toolbar */
+    .toolbar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .search-box {
+      flex: 1;
+      min-width: 180px;
+      position: relative;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 10px 16px 10px 38px;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      font-size: .88rem;
+      background: var(--card);
+      outline: none;
+      transition: border .15s;
+    }
+    .search-box input:focus { border-color: var(--primary-light); }
+    .search-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      font-size: 1rem;
+      pointer-events: none;
+    }
+    .btn {
+      padding: 9px 18px;
+      border-radius: 10px;
+      border: none;
+      font-size: .85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity .15s, transform .1s;
+    }
+    .btn:hover { opacity: .88; transform: translateY(-1px); }
+    .btn:active { transform: translateY(0); }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-accent { background: var(--accent); color: var(--primary); }
+    .btn-danger { background: var(--error); color: #fff; }
+    .btn-outline {
+      background: transparent;
+      color: var(--primary);
+      border: 1.5px solid var(--primary);
+    }
+    .mode-tabs {
+      display: flex;
+      gap: 6px;
+    }
+    .mode-tab {
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1.5px solid var(--border);
+      background: var(--card);
+      font-size: .8rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--muted);
+      transition: all .15s;
+    }
+    .mode-tab.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    /* question info bar */
+    .info-bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: .82rem;
+      color: var(--muted);
+    }
+    .info-pill {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-weight: 600;
+      color: var(--primary);
+      font-size: .78rem;
+    }
+
+    /* ── QUIZ MODE ───────────────────────────────────────── */
+    .quiz-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      padding: 28px;
+    }
+    .quiz-progress {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .progress-bar-wrap {
+      flex: 1;
+      height: 7px;
+      background: var(--bg);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--primary-light), var(--accent));
+      border-radius: 10px;
+      transition: width .3s;
+    }
+    .progress-text { font-size: .78rem; color: var(--muted); font-weight: 600; white-space: nowrap; }
+    .q-category {
+      display: inline-block;
+      font-size: .72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+      padding: 3px 10px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      color: #fff;
+    }
+    .q-number { font-size: .82rem; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+    .q-text {
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.6;
+      margin-bottom: 22px;
+      color: var(--text);
+    }
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .option-btn {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 13px 16px;
+      border: 2px solid var(--border);
+      border-radius: 10px;
+      background: var(--card);
+      cursor: pointer;
+      text-align: left;
+      transition: all .15s;
+      font-size: .92rem;
+      line-height: 1.5;
+      color: var(--text);
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--primary-light);
+      background: #f0f4fa;
+    }
+    .option-btn.correct {
+      border-color: var(--success);
+      background: #eafaf1;
+      color: var(--success);
+    }
+    .option-btn.wrong {
+      border-color: var(--error);
+      background: #fdecea;
+      color: var(--error);
+    }
+    .option-btn.selected-wrong {
+      border-color: var(--error);
+      background: #fdecea;
+      color: var(--error);
+    }
+    .option-letter {
+      width: 28px;
+      height: 28px;
+      min-width: 28px;
+      border-radius: 50%;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: .82rem;
+      color: var(--primary);
+    }
+    .option-btn.correct .option-letter { background: var(--success); color: #fff; }
+    .option-btn.wrong .option-letter,
+    .option-btn.selected-wrong .option-letter { background: var(--error); color: #fff; }
+
+    .explanation-box {
+      background: #fffbe6;
+      border: 1.5px solid #f5d87a;
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: .88rem;
+      line-height: 1.6;
+      margin-top: 14px;
+      color: #5a4200;
+    }
+    .explanation-box strong { color: var(--primary); }
+
+    .quiz-nav {
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 22px;
+      flex-wrap: wrap;
+    }
+
+    /* timer */
+    .timer {
+      font-size: .9rem;
+      font-weight: 700;
+      color: var(--primary);
+      background: var(--bg);
+      padding: 6px 14px;
+      border-radius: 8px;
+      border: 1.5px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .timer.warning { color: var(--error); border-color: var(--error); }
+
+    /* result screen */
+    .result-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .result-emoji { font-size: 3.5rem; margin-bottom: 12px; }
+    .result-title { font-size: 1.6rem; font-weight: 800; color: var(--primary); margin-bottom: 6px; }
+    .result-sub { color: var(--muted); font-size: .92rem; margin-bottom: 24px; }
+    .result-stats {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+    .result-stat {
+      background: var(--bg);
+      border-radius: 12px;
+      padding: 16px 24px;
+      min-width: 110px;
+    }
+    .result-stat-num { font-size: 2rem; font-weight: 900; color: var(--primary); }
+    .result-stat-label { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-top: 2px; }
+    .grade-badge {
+      display: inline-block;
+      padding: 8px 28px;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+
+    /* ── BROWSE MODE ─────────────────────────────────────── */
+    .questions-list { display: flex; flex-direction: column; gap: 14px; }
+    .q-browse-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: 0 2px 10px rgba(26,60,110,0.07);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .q-browse-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 18px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .q-browse-header:hover { background: #f8fafd; }
+    .q-browse-num {
+      font-size: .75rem;
+      font-weight: 700;
+      color: var(--muted);
+      min-width: 34px;
+    }
+    .q-browse-text {
+      font-size: .88rem;
+      font-weight: 600;
+      flex: 1;
+      color: var(--text);
+      line-height: 1.4;
+    }
+    .q-browse-arrow {
+      color: var(--muted);
+      font-size: .8rem;
+      transition: transform .2s;
+    }
+    .q-browse-arrow.open { transform: rotate(180deg); }
+    .q-browse-body {
+      border-top: 1px solid var(--border);
+      padding: 14px 18px;
+    }
+    .browse-options { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; }
+    .browse-option {
+      font-size: .84rem;
+      padding: 8px 12px;
+      border-radius: 7px;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .browse-option.ans { background: #eafaf1; color: var(--success); font-weight: 700; }
+    .browse-exp { font-size: .8rem; color: var(--muted); line-height: 1.5; padding-top: 6px; border-top: 1px dashed var(--border); }
+
+    /* pagination */
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+    .page-btn {
+      min-width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      border: 1.5px solid var(--border);
+      background: var(--card);
+      font-size: .82rem;
+      font-weight: 700;
+      cursor: pointer;
+      color: var(--muted);
+      transition: all .15s;
+    }
+    .page-btn:hover { background: var(--bg); }
+    .page-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .page-btn:disabled { opacity: .4; cursor: not-allowed; }
+
+    /* syllabus view */
+    .syllabus-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .syllabus-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-top: 4px solid;
+    }
+    .syllabus-cat-title { font-size: .98rem; font-weight: 800; margin-bottom: 6px; }
+    .syllabus-cat-count { font-size: .8rem; color: var(--muted); margin-bottom: 14px; }
+    .syllabus-bar-wrap { height: 6px; background: var(--bg); border-radius: 10px; overflow: hidden; margin-bottom: 12px; }
+    .syllabus-bar { height: 100%; border-radius: 10px; }
+    .syllabus-topics { font-size: .78rem; color: var(--muted); line-height: 1.7; }
+
+    /* loading */
+    .loading-screen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 60vh;
+      gap: 18px;
+    }
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid var(--border);
+      border-top-color: var(--primary);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* toast */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--primary);
+      color: #fff;
+      padding: 12px 22px;
+      border-radius: 10px;
+      font-size: .88rem;
+      font-weight: 600;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+      z-index: 999;
+      animation: slideUp .25s ease;
+    }
+    @keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+    /* responsive */
+    @media(max-width: 600px) {
+      .quiz-card { padding: 18px; }
+      .result-stats { gap: 12px; }
+      .result-stat { padding: 12px 16px; min-width: 90px; }
+    }
+
+    /* ── NOTES SECTION & DESKTOP WORKSPACE ─────────────── */
+    .notes-desktop-layout {
+      display: grid;
+      grid-template-columns: 290px 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+    @media(max-width: 960px) {
+      .notes-desktop-layout {
+        display: block;
+      }
+      .notes-desktop-nav {
+        display: none !important;
+      }
+    }
+    @media(min-width: 961px) {
+      .notes-tabs-bar {
+        display: none !important;
+      }
+    }
+    .notes-desktop-nav {
+      position: sticky;
+      top: 84px;
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      max-height: calc(100vh - 110px);
+      overflow-y: auto;
+    }
+    .notes-desktop-nav-header {
+      font-size: .76rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      font-weight: 700;
+      padding: 4px 8px 10px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .notes-desktop-nav-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1.5px solid transparent;
+      background: transparent;
+      cursor: pointer;
+      text-align: left;
+      font-size: .83rem;
+      font-weight: 600;
+      color: var(--text);
+      transition: all .15s ease;
+      width: 100%;
+    }
+    .notes-desktop-nav-item:hover {
+      background: #f0f4fa;
+    }
+    .notes-desktop-nav-item.active {
+      color: #fff !important;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    }
+    .notes-desktop-nav-item .nav-count {
+      margin-left: auto;
+      font-size: .7rem;
+      padding: 2px 7px;
+      border-radius: 10px;
+      background: rgba(0,0,0,0.06);
+      font-weight: 700;
+    }
+    .notes-desktop-nav-item.active .nav-count {
+      background: rgba(255,255,255,0.25);
+      color: #fff;
+    }
+
+    .notes-tabs-bar {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+      scrollbar-width: thin;
+    }
+    .notes-tab-chip {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 20px;
+      border: 1.5px solid var(--border);
+      background: var(--card);
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--text);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all .15s ease;
+    }
+    .notes-tab-chip:hover {
+      border-color: var(--primary-light);
+      background: #f0f4fa;
+    }
+    .notes-tab-chip.active {
+      color: #fff;
+      border-color: transparent;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+    .notes-header-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      border-left: 6px solid var(--primary);
+      padding: 22px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .notes-section-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: 0 2px 12px rgba(26,60,110,0.06);
+      border: 1px solid var(--border);
+      margin-bottom: 16px;
+      overflow: hidden;
+      transition: box-shadow .2s ease;
+    }
+    .notes-section-card:hover {
+      box-shadow: 0 6px 20px rgba(26,60,110,0.10);
+    }
+    .notes-section-header {
+      padding: 16px 20px;
+      background: #fbfcfe;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      user-select: none;
+    }
+    .notes-section-title {
+      font-size: .98rem;
+      font-weight: 700;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .notes-section-body {
+      padding: 20px;
+    }
+    .notes-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .notes-bullet-item {
+      position: relative;
+      padding-left: 22px;
+      line-height: 1.68;
+      color: var(--text);
+    }
+    .notes-bullet-item::before {
+      content: "▪";
+      position: absolute;
+      left: 4px;
+      top: -1px;
+      color: var(--primary-light);
+      font-size: 1.2rem;
+    }
+    .notes-bullet-item strong {
+      color: #1a3c6e;
+    }
+    .notes-bullet-item em {
+      color: #7b2cbf;
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    /* Font size classes for comfortable desktop reading */
+    .font-size-sm .notes-bullet-item { font-size: .82rem; line-height: 1.6; }
+    .font-size-md .notes-bullet-item { font-size: .92rem; line-height: 1.74; }
+    .font-size-lg .notes-bullet-item { font-size: 1.05rem; line-height: 1.82; }
+
+    /* Zoom buttons */
+    .zoom-btn-group {
+      display: flex;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--card);
+    }
+    .zoom-btn {
+      padding: 6px 11px;
+      border: none;
+      background: transparent;
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all .15s;
+    }
+    .zoom-btn:hover { background: #f0f4fa; }
+    .zoom-btn.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* Floating Back to Top Button */
+    .back-to-top-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 990;
+      transition: transform .2s, background .2s;
+    }
+    .back-to-top-btn:hover {
+      transform: translateY(-3px);
+      background: var(--primary-light);
+    }
+
+    /* Print styles */
+    @media print {
+      body { background: #fff !important; color: #000 !important; }
+      .header, .sidebar, .notes-desktop-nav, .notes-tabs-bar, .zoom-btn-group, .btn, .back-to-top-btn, footer, .toast, .search-box {
+        display: none !important;
+      }
+      .app-shell, .notes-desktop-layout { display: block !important; max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
+      .notes-section-card { box-shadow: none !important; border: 1px solid #ccc !important; page-break-inside: avoid; }
+      .notes-section-body { display: block !important; }
+    }
+
+    /* select / dropdown */
+    select {
+      padding: 9px 14px;
+      border-radius: 10px;
+      border: 1.5px solid var(--border);
+      background: var(--card);
+      font-size: .85rem;
+      color: var(--text);
+      outline: none;
+      cursor: pointer;
+    }
+    select:focus { border-color: var(--primary-light); }
+
+    .bookmark-btn {
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      padding: 4px;
+      line-height: 1;
+    }
+
+    .home-hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      border-radius: var(--radius);
+      color: #fff;
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .home-hero h2 { font-size: 1.4rem; font-weight: 800; }
+    .home-hero p { font-size: .9rem; opacity: .88; line-height: 1.6; }
+    .home-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 14px;
+    }
+    .home-action-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1.5px solid var(--border);
+      padding: 20px;
+      cursor: pointer;
+      transition: box-shadow .15s, transform .15s;
+      text-align: center;
+    }
+    .home-action-card:hover {
+      box-shadow: 0 8px 28px rgba(26,60,110,0.12);
+      transform: translateY(-2px);
+    }
+    .home-action-icon { font-size: 2rem; margin-bottom: 8px; }
+    .home-action-title { font-size: .95rem; font-weight: 700; color: var(--primary); margin-bottom: 4px; }
+    .home-action-desc { font-size: .77rem; color: var(--muted); }
+    .home-static-section {
+      margin-top: 22px;
+      padding: 20px;
+      background: var(--card);
+      border: 1.5px solid #b8dadd;
+      border-radius: var(--radius);
+    }
+    .home-static-topics {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 12px;
+    }
+    .home-static-topic {
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--bg);
+    }
+    .home-static-topic-title { min-height: 38px; font-size: .84rem; font-weight: 700; color: var(--primary); }
+    .home-static-topic-count { margin: 4px 0 10px; font-size: .75rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+<script src="questions.js"></script>
+<script src="additional_questions.js"></script>
+<script src="notes.js"></script>
+<script type="text/babel">
+
+const { useState, useEffect, useCallback, useRef, useMemo } = React;
+
+// ── CATEGORY META ──────────────────────────────────────────────────────────
+const CATEGORIES = [
+  { id: "Indian History & Freedom Movement", color: "#c0392b", bg: "#fadbd8", count: 230,
+    topics: "Ancient India, Vedic Age, Maurya & Gupta Empire, Delhi Sultanate, Mughal Era, 1857 Revolt, Congress, Gandhi, Bhagat Singh, Quit India, Independence" },
+  { id: "Indian Geography", color: "#1a5276", bg: "#d6eaf8", count: 200,
+    topics: "Physical features, Rivers, Climate, Soils, Natural vegetation, Resources, Agriculture, Industries, Transport, Population" },
+  { id: "Physics – Everyday Science", color: "#6c3483", bg: "#e8daef", count: 150,
+    topics: "Motion, Force, Work & Energy, Heat, Light, Sound, Electricity, Magnetism, Modern Physics" },
+  { id: "Chemistry – Everyday Science", color: "#0e6655", bg: "#d1f2eb", count: 150,
+    topics: "Matter, Atoms & Molecules, Periodic Table, Acids & Bases, Chemical Reactions, Metals, Organic Chemistry, Everyday Chemicals" },
+  { id: "Biology – Human Body", color: "#1e8449", bg: "#d5f5e3", count: 170,
+    topics: "Cell, Tissues, Digestive, Circulatory, Respiratory, Nervous, Excretory systems, Reproduction, Genetics, Diseases, Nutrition" },
+  { id: "Indian Polity & Constitution", color: "#784212", bg: "#fdebd0", count: 150,
+    topics: "Constitution, Preamble, Fundamental Rights, DPSP, Parliament, President, PM, Judiciary, Elections, Amendments" },
+  { id: "West Bengal GK", color: "#b7950b", bg: "#fef9e7", count: 150,
+    topics: "Geography, History, Culture, Economy, Government, Literature, Sports, Famous Personalities, Districts, Rivers" },
+  { id: "Indian Economy", color: "#117a65", bg: "#d0ece7", count: 100,
+    topics: "National income, Planning, Banking, Agriculture, Industry, Trade, Budget, Taxation, Poverty, Employment" },
+  { id: "Environment & Ecology", color: "#2e7d32", bg: "#e8f5e9", count: 100,
+    topics: "Ecosystem, Food chain, Biodiversity, Conservation, Pollution, Climate Change, Wildlife, National Parks, Environmental Laws" },
+  { id: "Current Affairs", color: "#6a1b9a", bg: "#f3e5f5", count: 100,
+    topics: "National events, International affairs, Awards, Sports, Science & Tech, Economy, Government schemes, Books & Authors" },
+  { id: "Static GK", color: "#156a75", bg: "#d9eff0", count: 316,
+    topics: "Folk & Classical Dances, National Parks, Nobel Prizes, Olympics, Sports Events, Countries & Capitals, Instruments & Players, Personalities, Writers & Books" },
+];
+
+const CAT_MAP = Object.fromEntries(CATEGORIES.map(c => [c.id, c]));
+const TOTAL_QUESTIONS = window.QUESTIONS.length;
+const STATIC_GK_TOPICS = [
+  "Folk & Classical Dances",
+  "Important National Parks",
+  "Nobel Prize Facts",
+  "Recent Nobel Prize Winners",
+  "Olympics",
+  "Sports Events, Winners & Organisations",
+  "Countries & Capitals",
+  "Indian Musical Instruments & Players",
+  "Notable Indian Personalities by Field",
+  "Writers & Famous Books",
+];
+
+// ── UTILS ──────────────────────────────────────────────────────────────────
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function useLocalStorage(key, init) {
+  const [val, setVal] = useState(() => {
+    try { const s = localStorage.getItem(key); return s ? JSON.parse(s) : init; } catch { return init; }
+  });
+  const set = useCallback(v => {
+    setVal(v);
+    try { localStorage.setItem(key, JSON.stringify(v)); } catch {}
+  }, [key]);
+  return [val, set];
+}
+
+function getGrade(pct) {
+  if (pct >= 90) return { label: "Outstanding 🌟", color: "#27ae60", bg: "#eafaf1" };
+  if (pct >= 75) return { label: "Excellent 🎉", color: "#2980b9", bg: "#eaf2ff" };
+  if (pct >= 60) return { label: "Good 👍", color: "#f39c12", bg: "#fef9e7" };
+  if (pct >= 40) return { label: "Average 📚", color: "#e67e22", bg: "#fdebd0" };
+  return { label: "Needs Improvement 💪", color: "#e74c3c", bg: "#fdecea" };
+}
+
+function fmtTime(s) {
+  const m = Math.floor(s / 60);
+  const sec = s % 60;
+  return `${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`;
+}
+
+// ── SCORE RING ──────────────────────────────────────────────────────────────
+function ScoreRing({ pct, size = 90, stroke = 8 }) {
+  const r = (size - stroke) / 2;
+  const circ = 2 * Math.PI * r;
+  const dash = (pct / 100) * circ;
+  const color = pct >= 75 ? '#27ae60' : pct >= 50 ? '#f39c12' : '#e74c3c';
+  return (
+    <svg width={size} height={size} className="score-ring">
+      <circle cx={size/2} cy={size/2} r={r} fill="none" stroke="#e8edf5" strokeWidth={stroke} />
+      <circle cx={size/2} cy={size/2} r={r} fill="none" stroke={color} strokeWidth={stroke}
+        strokeDasharray={`${dash} ${circ}`} strokeLinecap="round"
+        transform={`rotate(-90 ${size/2} ${size/2})`} />
+      <text x="50%" y="50%" textAnchor="middle" dominantBaseline="central" className="score-pct"
+        style={{fontSize: '1rem', fontWeight: 800, fill: color}}>
+        {pct}%
+      </text>
+    </svg>
+  );
+}
+
+// ── TIMER HOOK ──────────────────────────────────────────────────────────────
+function useTimer(active) {
+  const [elapsed, setElapsed] = useState(0);
+  const ref = useRef(null);
+  useEffect(() => {
+    if (active) {
+      ref.current = setInterval(() => setElapsed(p => p + 1), 1000);
+    } else {
+      clearInterval(ref.current);
+    }
+    return () => clearInterval(ref.current);
+  }, [active]);
+  const reset = useCallback(() => setElapsed(0), []);
+  return [elapsed, reset];
+}
+
+// ── TOAST ───────────────────────────────────────────────────────────────────
+function Toast({ msg }) {
+  if (!msg) return null;
+  return <div className="toast">{msg}</div>;
+}
+
+// ── BROWSE CARD ──────────────────────────────────────────────────────────────
+function BrowseCard({ q, idx, bookmarks, toggleBookmark }) {
+  const [open, setOpen] = useState(false);
+  const cat = CAT_MAP[q.category];
+  return (
+    <div className="q-browse-card">
+      <div className="q-browse-header" onClick={() => setOpen(o => !o)}>
+        <span className="q-browse-num">#{q.id}</span>
+        <span className="q-browse-text">{q.question}</span>
+        <button className="bookmark-btn" onClick={e => { e.stopPropagation(); toggleBookmark(q.id); }}
+          title={bookmarks.has(q.id) ? "Remove bookmark" : "Bookmark"}>
+          {bookmarks.has(q.id) ? "🔖" : "🏷️"}
+        </button>
+        <span className="q-browse-arrow" style={{
+          display:'inline-block',
+          transform: open ? 'rotate(180deg)' : 'rotate(0deg)',
+          transition:'transform .2s'
+        }}>▼</span>
+      </div>
+      {open && (
+        <div className="q-browse-body">
+          <div className="browse-options">
+            {q.options.map((opt, i) => {
+              const letter = ["A","B","C","D"][i];
+              return (
+                <div key={i} className={`browse-option ${q.answer === letter ? 'ans' : ''}`}>
+                  {opt} {q.answer === letter && "✓"}
+                </div>
+              );
+            })}
+          </div>
+          {q.explanation && (
+            <div className="browse-exp"><strong>📝 Explanation:</strong> {q.explanation}</div>
+          )}
+          <div style={{marginTop:8}}>
+            <span className="q-category" style={{background: cat?.color || '#888'}}>
+              {q.category}
+            </span>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ── QUIZ MODE ────────────────────────────────────────────────────────────────
+function QuizMode({ questions, onBack }) {
+  const [current, setCurrent] = useState(0);
+  const [selected, setSelected] = useState(null);
+  const [showExp, setShowExp] = useState(false);
+  const [score, setScore] = useState(0);
+  const [done, setDone] = useState(false);
+  const [answers, setAnswers] = useState([]);
+  const [elapsed, resetTimer] = useTimer(!done);
+  const [bookmarks, setBookmarks] = useLocalStorage('wbpsc_bookmarks', []);
+  const bSet = useMemo(() => new Set(bookmarks), [bookmarks]);
+
+  const q = questions[current];
+  const cat = CAT_MAP[q?.category];
+
+  const handleSelect = (letter) => {
+    if (selected) return;
+    setSelected(letter);
+    setShowExp(true);
+    const correct = letter === q.answer;
+    if (correct) setScore(s => s + 1);
+    setAnswers(a => [...a, { id: q.id, correct }]);
+  };
+
+  const next = () => {
+    if (current + 1 >= questions.length) {
+      setDone(true);
+    } else {
+      setCurrent(c => c + 1);
+      setSelected(null);
+      setShowExp(false);
+    }
+  };
+
+  const prev = () => {
+    if (current > 0) {
+      setCurrent(c => c - 1);
+      setSelected(null);
+      setShowExp(false);
+    }
+  };
+
+  const toggleBookmark = (id) => {
+    setBookmarks(b => b.includes(id) ? b.filter(x => x !== id) : [...b, id]);
+  };
+
+  useEffect(() => {
+    if (done || !q) return;
+    const handleKeyDown = (e) => {
+      if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
+      const key = e.key.toUpperCase();
+      if (!selected) {
+        if (['A', '1'].includes(key)) { handleSelect('A'); }
+        else if (['B', '2'].includes(key)) { handleSelect('B'); }
+        else if (['C', '3'].includes(key)) { handleSelect('C'); }
+        else if (['D', '4'].includes(key)) { handleSelect('D'); }
+      } else {
+        if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowRight') {
+          e.preventDefault();
+          next();
+        }
+      }
+      if (e.key === 'ArrowLeft' && current > 0) {
+        e.preventDefault();
+        prev();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [current, selected, done, q]);
+
+  if (done) {
+    const pct = Math.round((score / questions.length) * 100);
+    const grade = getGrade(pct);
+    return (
+      <div className="result-card">
+        <div className="result-emoji">{pct >= 75 ? "🏆" : pct >= 50 ? "🎯" : "📚"}</div>
+        <div className="result-title">Quiz Complete!</div>
+        <div className="result-sub">You answered {questions.length} questions in {fmtTime(elapsed)}</div>
+        <div className="result-stats">
+          <div className="result-stat">
+            <div className="result-stat-num" style={{color:'#27ae60'}}>{score}</div>
+            <div className="result-stat-label">Correct</div>
+          </div>
+          <div className="result-stat">
+            <div className="result-stat-num" style={{color:'#e74c3c'}}>{questions.length - score}</div>
+            <div className="result-stat-label">Wrong</div>
+          </div>
+          <div className="result-stat">
+            <div className="result-stat-num">{questions.length}</div>
+            <div className="result-stat-label">Total</div>
+          </div>
+          <div className="result-stat">
+            <div className="result-stat-num">{pct}%</div>
+            <div className="result-stat-label">Score</div>
+          </div>
+        </div>
+        <div className="grade-badge" style={{background: grade.bg, color: grade.color}}>
+          {grade.label}
+        </div>
+        <br/>
+        <div style={{display:'flex', gap:12, justifyContent:'center', flexWrap:'wrap'}}>
+          <button className="btn btn-primary" onClick={onBack}>← Back to Home</button>
+        </div>
+      </div>
+    );
+  }
+
+  if (!q) return null;
+  const pct = Math.round((current / questions.length) * 100);
+
+  return (
+    <div className="quiz-card">
+      <div className="quiz-progress">
+        <div className="progress-bar-wrap"><div className="progress-bar" style={{width:`${pct}%`}} /></div>
+        <span className="progress-text">{current+1}/{questions.length}</span>
+        <div className={`timer ${elapsed > 1800 ? 'warning' : ''}`}>⏱ {fmtTime(elapsed)}</div>
+      </div>
+
+      <div style={{display:'flex', alignItems:'center', gap:8, marginBottom:14}}>
+        <span className="q-category" style={{background: cat?.color || '#888'}}>{q.category}</span>
+        <button className="bookmark-btn" style={{marginLeft:'auto'}} onClick={() => toggleBookmark(q.id)}>
+          {bSet.has(q.id) ? "🔖" : "🏷️"}
+        </button>
+      </div>
+
+      <div className="q-number">Question {q.id}</div>
+      <div className="q-text">{q.question}</div>
+
+      <div className="options-grid">
+        {q.options.map((opt, i) => {
+          const letter = ["A","B","C","D"][i];
+          let cls = "option-btn";
+          if (selected) {
+            if (letter === q.answer) cls += " correct";
+            else if (letter === selected) cls += " selected-wrong";
+          }
+          return (
+            <button key={i} className={cls} onClick={() => handleSelect(letter)} disabled={!!selected}>
+              <span className="option-letter">{letter}</span>
+              <span>{opt}</span>
+            </button>
+          );
+        })}
+      </div>
+
+      {showExp && q.explanation && (
+        <div className="explanation-box">
+          <strong>📝 Explanation:</strong> {q.explanation}
+        </div>
+      )}
+
+      <div className="quiz-nav">
+        <button className="btn btn-outline" onClick={prev} disabled={current === 0}>← Previous</button>
+        <button className="btn btn-primary" onClick={next}>
+          {current + 1 >= questions.length ? "Finish Quiz" : "Next →"}
+        </button>
+      </div>
+
+      <div style={{display:'flex', alignItems:'center', justifyContent:'center', gap:12, marginTop:14, fontSize:'.74rem', color:'var(--muted)', flexWrap:'wrap'}}>
+        <span>⌨️ Desktop Shortcuts:</span>
+        <span><kbd style={{background:'var(--surface)', padding:'2px 6px', borderRadius:3, border:'1px solid var(--border)', fontWeight:600}}>A</kbd>/<kbd style={{background:'var(--surface)', padding:'2px 6px', borderRadius:3, border:'1px solid var(--border)', fontWeight:600}}>B</kbd>/<kbd style={{background:'var(--surface)', padding:'2px 6px', borderRadius:3, border:'1px solid var(--border)', fontWeight:600}}>C</kbd>/<kbd style={{background:'var(--surface)', padding:'2px 6px', borderRadius:3, border:'1px solid var(--border)', fontWeight:600}}>D</kbd> or <kbd style={{background:'var(--surface)', padding:'2px 6px', borderRadius:3, border:'1px solid var(--border)', fontWeight:600}}>1-4</kbd></span>
+        <span>•</span>
+        <span><kbd style={{background:'var(--surface)', padding:'2px 6px', borderRadius:3, border:'1px solid var(--border)', fontWeight:600}}>Enter</kbd> / <kbd style={{background:'var(--surface)', padding:'2px 6px', borderRadius:3, border:'1px solid var(--border)', fontWeight:600}}>Space</kbd> / <kbd style={{background:'var(--surface)', padding:'2px 6px', borderRadius:3, border:'1px solid var(--border)', fontWeight:600}}>→</kbd> Next</span>
+        <span>•</span>
+        <span><kbd style={{background:'var(--surface)', padding:'2px 6px', borderRadius:3, border:'1px solid var(--border)', fontWeight:600}}>←</kbd> Prev</span>
+      </div>
+    </div>
+  );
+}
+
+// ── BROWSE MODE ──────────────────────────────────────────────────────────────
+const PAGE_SIZE = 20;
+
+function BrowseMode({ questions }) {
+  const [page, setPage] = useState(1);
+  const [bookmarks, setBookmarks] = useLocalStorage('wbpsc_bookmarks', []);
+  const bSet = useMemo(() => new Set(bookmarks), [bookmarks]);
+  const totalPages = Math.ceil(questions.length / PAGE_SIZE);
+  const pageQs = questions.slice((page-1)*PAGE_SIZE, page*PAGE_SIZE);
+
+  const toggleBookmark = (id) => {
+    setBookmarks(b => b.includes(id) ? b.filter(x => x !== id) : [...b, id]);
+  };
+
+  return (
+    <div>
+      <div className="questions-list">
+        {pageQs.map((q, i) => (
+          <BrowseCard key={q.id} q={q} idx={(page-1)*PAGE_SIZE+i} bookmarks={bSet} toggleBookmark={toggleBookmark} />
+        ))}
+      </div>
+      {totalPages > 1 && (
+        <div className="pagination">
+          <button className="page-btn" disabled={page===1} onClick={() => setPage(1)}>«</button>
+          <button className="page-btn" disabled={page===1} onClick={() => setPage(p=>p-1)}>‹</button>
+          {Array.from({length: Math.min(7, totalPages)}, (_, i) => {
+            let p;
+            if (totalPages <= 7) p = i+1;
+            else if (page <= 4) p = i+1;
+            else if (page >= totalPages-3) p = totalPages-6+i;
+            else p = page-3+i;
+            return (
+              <button key={p} className={`page-btn ${p===page?'active':''}`} onClick={() => setPage(p)}>{p}</button>
+            );
+          })}
+          <button className="page-btn" disabled={page===totalPages} onClick={() => setPage(p=>p+1)}>›</button>
+          <button className="page-btn" disabled={page===totalPages} onClick={() => setPage(totalPages)}>»</button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ── TOPICWISE NOTES VIEW ───────────────────────────────────────────────────
+function NotesSectionCard({ sec, isMatch, initialOpen = true }) {
+  const [open, setOpen] = useState(initialOpen);
+
+  useEffect(() => {
+    setOpen(initialOpen);
+  }, [initialOpen]);
+
+  return (
+    <div className="notes-section-card" style={isMatch ? { borderColor: 'var(--primary-light)', boxShadow: '0 0 0 2px rgba(26,60,110,0.15)' } : {}}>
+      <div className="notes-section-header" onClick={() => setOpen(o => !o)}>
+        <div className="notes-section-title">
+          <span>📌</span>
+          <span>{sec.title}</span>
+        </div>
+        <span style={{
+          fontSize: '.8rem',
+          color: 'var(--muted)',
+          display: 'inline-block',
+          transform: open ? 'rotate(180deg)' : 'rotate(0deg)',
+          transition: 'transform .2s'
+        }}>▼</span>
+      </div>
+      {open && (
+        <div className="notes-section-body">
+          <ul className="notes-bullets">
+            {sec.bullets.map((b, idx) => (
+              <li key={idx} className="notes-bullet-item" dangerouslySetInnerHTML={{ __html: b }} />
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function NotesView({ onStartQuiz }) {
+  const notesData = window.TOPIC_NOTES || [];
+  const [activeIdx, setActiveIdx] = useState(0);
+  const [noteSearch, setNoteSearch] = useState('');
+  const [expandAll, setExpandAll] = useState(true);
+  const [fontSize, setFontSize] = useState('md'); // 'sm' | 'md' | 'lg'
+
+  const currentTopic = notesData[activeIdx] || notesData[0];
+
+  const filteredSections = useMemo(() => {
+    if (!currentTopic) return [];
+    const topics = noteSearch.trim() ? notesData : [currentTopic];
+    const term = noteSearch.trim().toLowerCase();
+    return topics.flatMap(topic => topic.sections
+      .filter(sec => !term || topic.category.toLowerCase().includes(term) || sec.title.toLowerCase().includes(term) || sec.bullets.some(b => b.toLowerCase().includes(term)))
+      .map(sec => ({ topic, section: sec })));
+  }, [notesData, currentTopic, noteSearch]);
+
+  if (!currentTopic) {
+    return <div className="card">Notes data is loading...</div>;
+  }
+
+  return (
+    <div className={`notes-container font-size-${fontSize}`}>
+      {/* Mobile / Tablet Horizontal Category Scrollbar */}
+      <div className="notes-tabs-bar">
+        {notesData.map((item, idx) => {
+          const isActive = idx === activeIdx;
+          return (
+            <button
+              key={item.category}
+              className={`notes-tab-chip ${isActive ? 'active' : ''}`}
+              style={{
+                backgroundColor: isActive ? item.color : undefined,
+                color: isActive ? '#fff' : undefined,
+                borderColor: isActive ? item.color : undefined
+              }}
+              onClick={() => { setActiveIdx(idx); setNoteSearch(''); }}
+            >
+              <span>{item.icon}</span>
+              <span>{item.category}</span>
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Desktop Dual-Pane Layout */}
+      <div className="notes-desktop-layout">
+        {/* Left Pane: Desktop Sticky Navigation Drawer */}
+        <aside className="notes-desktop-nav">
+          <div className="notes-desktop-nav-header">
+            <span>📚 Notes Library</span>
+            <span>{notesData.length} Topics</span>
+          </div>
+          {notesData.map((item, idx) => {
+            const isActive = idx === activeIdx;
+            return (
+              <button
+                key={item.category}
+                className={`notes-desktop-nav-item ${isActive ? 'active' : ''}`}
+                style={isActive ? { background: item.color, borderColor: item.color } : {}}
+                onClick={() => { setActiveIdx(idx); setNoteSearch(''); }}
+              >
+                <span style={{ fontSize: '1.2rem' }}>{item.icon}</span>
+                <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                  {item.category}
+                </span>
+                <span className="nav-count">{item.sections ? item.sections.length : 0}</span>
+              </button>
+            );
+          })}
+        </aside>
+
+        {/* Right Pane: Main Topic Content */}
+        <div className="notes-desktop-content">
+          {/* Header Banner */}
+          <div className="notes-header-card" style={{ borderLeftColor: currentTopic.color }}>
+            <div style={{ flex: 1, minWidth: 260 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 6, flexWrap: 'wrap' }}>
+                <span style={{ fontSize: '1.8rem' }}>{currentTopic.icon}</span>
+                <h2 style={{ fontSize: '1.35rem', fontWeight: 800, color: currentTopic.color }}>{currentTopic.category}</h2>
+                <span style={{
+                  background: currentTopic.color,
+                  color: '#fff',
+                  fontSize: '.72rem',
+                  fontWeight: 700,
+                  padding: '3px 10px',
+                  borderRadius: 14
+                }}>
+                  {currentTopic.badge}
+                </span>
+              </div>
+              <p style={{ fontSize: '.88rem', color: 'var(--muted)', lineHeight: 1.6 }}>
+                {currentTopic.summary}
+              </p>
+            </div>
+            <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', alignItems: 'center' }}>
+              {currentTopic.quizEnabled !== false && (
+                <button
+                  className="btn btn-primary"
+                  style={{ background: currentTopic.color, borderColor: currentTopic.color, padding: '9px 18px' }}
+                  onClick={() => onStartQuiz(currentTopic.quizCategory || currentTopic.category, 25)}
+                >
+                  🎯 Practice 25 MCQs
+                </button>
+              )}
+              <button
+                className="btn btn-outline"
+                style={{ padding: '9px 14px' }}
+                title="Print or Save as PDF"
+                onClick={() => window.print()}
+              >
+                🖨️ Print / PDF
+              </button>
+            </div>
+          </div>
+
+          {/* Desktop Toolbar: Search, Zoom & Controls */}
+          <div style={{
+            display: 'flex',
+            gap: 12,
+            alignItems: 'center',
+            marginBottom: 16,
+            flexWrap: 'wrap',
+            background: 'var(--card)',
+            padding: '12px 16px',
+            borderRadius: 'var(--radius)',
+            border: '1px solid var(--border)'
+          }}>
+            <div className="search-box" style={{ flex: 1, minWidth: 220 }}>
+              <span className="search-icon">🔍</span>
+              <input
+                placeholder="Search keywords across all notes..."
+                value={noteSearch}
+                onChange={e => setNoteSearch(e.target.value)}
+              />
+            </div>
+
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <span style={{ fontSize: '.75rem', fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase' }}>Text Size:</span>
+              <div className="zoom-btn-group">
+                <button
+                  className={`zoom-btn ${fontSize === 'sm' ? 'active' : ''}`}
+                  onClick={() => setFontSize('sm')}
+                  title="Small text"
+                >
+                  A-
+                </button>
+                <button
+                  className={`zoom-btn ${fontSize === 'md' ? 'active' : ''}`}
+                  onClick={() => setFontSize('md')}
+                  title="Medium text"
+                >
+                  A
+                </button>
+                <button
+                  className={`zoom-btn ${fontSize === 'lg' ? 'active' : ''}`}
+                  onClick={() => setFontSize('lg')}
+                  title="Large text"
+                >
+                  A+
+                </button>
+              </div>
+            </div>
+
+            <button
+              className="btn btn-outline"
+              style={{ padding: '7px 14px', fontSize: '.78rem' }}
+              onClick={() => setExpandAll(prev => !prev)}
+            >
+              {expandAll ? 'Collapse All' : 'Expand All'}
+            </button>
+
+            {noteSearch && (
+              <button
+                style={{ fontSize: '.8rem', color: 'var(--error)', background: 'none', border: 'none', cursor: 'pointer', fontWeight: 600 }}
+                onClick={() => setNoteSearch('')}
+              >
+                ✕ Clear filter
+              </button>
+            )}
+          </div>
+
+          {/* Search Result Status */}
+          {noteSearch && (
+            <div style={{ marginBottom: 14, fontSize: '.84rem', color: 'var(--muted)' }}>
+              Showing <strong>{filteredSections.length}</strong> section(s) across all topics matching "<em>{noteSearch}</em>"
+            </div>
+          )}
+
+          {/* Sections List */}
+          <div>
+            {filteredSections.length === 0 ? (
+              <div className="card" style={{ textAlign: 'center', padding: '36px 20px', color: 'var(--muted)' }}>
+                <div style={{ fontSize: '2rem', marginBottom: 10 }}>🔍</div>
+                <div style={{ fontWeight: 700, marginBottom: 4 }}>No notes found matching "{noteSearch}"</div>
+                <div style={{ fontSize: '.82rem' }}>Try searching another term or clear the filter to view all topics.</div>
+              </div>
+            ) : (
+              filteredSections.map(({ topic, section }, i) => (
+                <NotesSectionCard
+                  key={`${topic.category}-${section.title}-${i}`}
+                  sec={noteSearch ? { ...section, title: `${topic.category} · ${section.title}` } : section}
+                  isMatch={Boolean(noteSearch)}
+                  initialOpen={expandAll}
+                />
+              ))
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// ── SYLLABUS VIEW ────────────────────────────────────────────────────────────
+function SyllabusView() {
+  return (
+    <div>
+      <div className="card" style={{marginBottom:20}}>
+        <div className="card-title">WBPSC Clerkship Exam – GK Syllabus Overview</div>
+        <p style={{fontSize:'.88rem',lineHeight:1.7,color:'var(--muted)'}}>
+          The West Bengal Public Service Commission (WBPSC) Clerkship Examination includes a General Knowledge section
+          covering Indian History, Geography, Science, Polity, West Bengal GK, Economy, Environment, and Current Affairs.
+          This question bank covers <strong>{TOTAL_QUESTIONS} MCQs</strong> across all these topics, including a dedicated Static GK section.
+        </p>
+      </div>
+      <div className="syllabus-grid">
+        {CATEGORIES.map(cat => {
+          const barPct = Math.round((cat.count / TOTAL_QUESTIONS) * 100);
+          return (
+            <div className="syllabus-card" key={cat.id} style={{borderTopColor: cat.color}}>
+              <div className="syllabus-cat-title" style={{color: cat.color}}>{cat.id}</div>
+              <div className="syllabus-cat-count">{cat.count} Questions ({barPct}% of total)</div>
+              <div className="syllabus-bar-wrap">
+                <div className="syllabus-bar" style={{width:`${barPct*2.5}%`, background: cat.color}} />
+              </div>
+              <div className="syllabus-topics">📌 {cat.topics}</div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+// ── MAIN APP ─────────────────────────────────────────────────────────────────
+function App() {
+  const allQuestions = window.QUESTIONS || [];
+  const [view, setView] = useState('home'); // home | quiz | browse | syllabus | bookmarks
+  const [filterCat, setFilterCat] = useState('all');
+  const [filterTopic, setFilterTopic] = useState('all');
+  const [search, setSearch] = useState('');
+  const [quizSize, setQuizSize] = useState(25);
+  const [quizQuestions, setQuizQuestions] = useState([]);
+  const [toast, setToast] = useState('');
+  const [bookmarks] = useLocalStorage('wbpsc_bookmarks', []);
+  const [attempted, setAttempted] = useLocalStorage('wbpsc_attempted', []);
+
+  const showToast = (msg) => {
+    setToast(msg);
+    setTimeout(() => setToast(''), 2500);
+  };
+
+  const filteredQs = useMemo(() => {
+    let qs = allQuestions;
+    if (filterCat !== 'all') qs = qs.filter(q => q.category === filterCat);
+    if (filterTopic !== 'all') qs = qs.filter(q => q.topic === filterTopic);
+    if (search.trim()) {
+      const s = search.toLowerCase();
+      qs = qs.filter(q => q.question.toLowerCase().includes(s) || q.options.some(o => o.toLowerCase().includes(s)));
+    }
+    return qs;
+  }, [allQuestions, filterCat, filterTopic, search]);
+
+  const bookmarkQs = useMemo(() => {
+    const bSet = new Set(bookmarks);
+    return allQuestions.filter(q => bSet.has(q.id));
+  }, [allQuestions, bookmarks]);
+
+  const startQuiz = (fromCategory = filterCat, size = quizSize, fromTopic = 'all') => {
+    let pool = allQuestions;
+    if (fromCategory !== 'all') pool = pool.filter(q => q.category === fromCategory);
+    if (fromTopic !== 'all') pool = pool.filter(q => q.topic === fromTopic);
+    const qs = shuffle(pool).slice(0, size);
+    if (qs.length === 0) { showToast("No questions found!"); return; }
+    setQuizQuestions(qs);
+    setView('quiz');
+  };
+
+  const startBookmarkQuiz = () => {
+    const qs = shuffle(bookmarkQs).slice(0, Math.min(50, bookmarkQs.length));
+    if (qs.length === 0) { showToast("No bookmarks yet!"); return; }
+    setQuizQuestions(qs);
+    setView('quiz');
+  };
+
+  const totalAnswered = useMemo(() => attempted.length, [attempted]);
+  const catCounts = useMemo(() => {
+    const m = {};
+    allQuestions.forEach(q => { m[q.category] = (m[q.category]||0)+1; });
+    return m;
+  }, [allQuestions]);
+
+  if (allQuestions.length === 0) {
+    return (
+      <div>
+        <div className="header">
+          <div className="header-inner">
+            <div className="header-logo">W</div>
+            <div className="header-titles">
+              <div className="header-title">WBPSC Clerkship GK</div>
+              <div className="header-sub">{TOTAL_QUESTIONS} MCQ Question Bank</div>
+            </div>
+          </div>
+        </div>
+        <div className="loading-screen">
+          <div className="spinner"></div>
+          <div style={{fontWeight:700, fontSize:'1.1rem', color:'var(--primary)'}}>Loading Question Bank…</div>
+          <div style={{color:'var(--muted)', fontSize:'.88rem'}}>Please ensure questions.js and additional_questions.js are present in the same folder.</div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      <div className="header">
+        <div className="header-inner">
+          <div className="header-logo">W</div>
+          <div className="header-titles">
+            <div className="header-title">WBPSC Clerkship GK</div>
+            <div className="header-sub">Complete {allQuestions.length}-Question MCQ Bank | West Bengal PSC</div>
+          </div>
+          <span className="header-badge">📚 {allQuestions.length} Questions</span>
+        </div>
+        <div style={{background:'rgba(255,255,255,.08)', borderTop:'1px solid rgba(255,255,255,.12)'}}>
+          <div style={{maxWidth:1200, margin:'0 auto', padding:'0 20px', display:'flex', gap:4, overflowX:'auto'}}>
+            {[
+              { key:'home', label:'🏠 Home' },
+              { key:'notes', label:'📝 Topic Notes' },
+              { key:'quiz', label:'🎯 Quiz' },
+              { key:'browse', label:'📖 Browse' },
+              { key:'syllabus', label:'📋 Syllabus' },
+              { key:'bookmarks', label:`🔖 Saved (${bookmarks.length})` },
+            ].map(t => (
+              <button key={t.key}
+                style={{
+                  padding:'10px 16px', border:'none', background: view===t.key ? 'rgba(255,255,255,.18)' : 'transparent',
+                  color:'#fff', fontWeight:600, fontSize:'.82rem', cursor:'pointer',
+                  borderBottom: view===t.key ? '2px solid #f5a623' : '2px solid transparent',
+                  whiteSpace:'nowrap'
+                }}
+                onClick={() => { if(t.key !== 'quiz') { setView(t.key); } else { setView('home'); } }}>
+                {t.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {view === 'quiz' ? (
+        <div style={{maxWidth:860, margin:'24px auto', padding:'0 16px'}}>
+          <QuizMode questions={quizQuestions} onBack={() => setView('home')} />
+        </div>
+      ) : (
+        <div className="app-shell">
+          {/* SIDEBAR */}
+          <aside className="sidebar">
+            <div className="card">
+              <div className="card-title">Your Stats</div>
+              <div className="stats-grid">
+                <div className="stat-box">
+                  <div className="stat-num">{allQuestions.length}</div>
+                  <div className="stat-label">Total Qs</div>
+                </div>
+                <div className="stat-box">
+                  <div className="stat-num">{bookmarks.length}</div>
+                  <div className="stat-label">Bookmarks</div>
+                </div>
+                <div className="stat-box">
+                  <div className="stat-num">{CATEGORIES.length}</div>
+                  <div className="stat-label">Topics</div>
+                </div>
+                <div className="stat-box">
+                  <div className="stat-num">100</div>
+                  <div className="stat-label">Max Quiz</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-title">Categories</div>
+              <div className="cat-list">
+                <button className={`cat-btn ${filterCat==='all'?'active':''}`} onClick={() => { setFilterCat('all'); setFilterTopic('all'); }}>
+                  <span className="cat-dot" style={{background:'#666'}} />
+                  <span className="cat-name">All Topics</span>
+                  <span className="cat-count">{allQuestions.length}</span>
+                </button>
+                {CATEGORIES.map(cat => (
+                  <button key={cat.id} className={`cat-btn ${filterCat===cat.id?'active':''}`}
+                    onClick={() => { setFilterCat(cat.id); setFilterTopic('all'); }}>
+                    <span className="cat-dot" style={{background: cat.color}} />
+                    <span className="cat-name">{cat.id}</span>
+                    <span className="cat-count">{catCounts[cat.id]||0}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-title">Quick Quiz</div>
+              <div style={{display:'flex', flexDirection:'column', gap:10}}>
+                <select value={quizSize} onChange={e => setQuizSize(Number(e.target.value))} style={{width:'100%'}}>
+                  <option value={10}>10 Questions</option>
+                  <option value={25}>25 Questions</option>
+                  <option value={50}>50 Questions</option>
+                  <option value={100}>100 Questions</option>
+                </select>
+                <button className="btn btn-primary" style={{width:'100%'}} onClick={() => startQuiz(filterCat, quizSize, filterTopic)}>
+                  ▶ Start Quiz
+                </button>
+                <button className="btn" style={{width:'100%', background:'#27ae60', color:'#fff'}} onClick={() => setView('notes')}>
+                  📝 Study Topic Notes
+                </button>
+                {bookmarks.length > 0 && (
+                  <button className="btn btn-outline" style={{width:'100%'}} onClick={startBookmarkQuiz}>
+                    🔖 Quiz Bookmarks
+                  </button>
+                )}
+              </div>
+            </div>
+          </aside>
+
+          {/* MAIN */}
+          <main className="main">
+            {/* HOME */}
+            {view === 'home' && (
+              <>
+                <div className="home-hero">
+                  <h2>🏛️ WBPSC Clerkship GK – Complete Question Bank</h2>
+                  <p>Master all {allQuestions.length} MCQs covering Indian History, Geography, Science, Polity, West Bengal GK, Economy, Environment, Current Affairs, and Static GK. Curated for West Bengal Public Service Commission Clerkship Examination.</p>
+                  <div style={{display:'flex', gap:10, flexWrap:'wrap'}}>
+                    <button className="btn" style={{background:'#f5a623',color:'#1a3c6e'}} onClick={() => startQuiz('all', 25, 'all')}>
+                      🎯 Start 25-Q Practice
+                    </button>
+                    <button className="btn" style={{background:'#27ae60',color:'#fff'}} onClick={() => setView('notes')}>
+                      📝 Read Topic Notes
+                    </button>
+                    <button className="btn" style={{background:'rgba(255,255,255,.15)',color:'#fff', border:'1.5px solid rgba(255,255,255,.3)'}}
+                      onClick={() => setView('browse')}>
+                      📖 Browse All Questions
+                    </button>
+                  </div>
+                </div>
+
+                <div className="home-cards">
+                  {CATEGORIES.map(cat => (
+                    <div key={cat.id} className="home-action-card" onClick={() => { setFilterCat(cat.id); setFilterTopic('all'); setView('browse'); }}>
+                      <div className="home-action-title" style={{color: cat.color}}>{cat.id}</div>
+                      <div className="home-action-desc">{catCounts[cat.id] || 0} Questions</div>
+                      <div style={{marginTop:10}}>
+                        <div className="syllabus-bar-wrap">
+                          <div className="syllabus-bar" style={{width:`${Math.round(((catCounts[cat.id] || 0)/Math.max(...Object.values(catCounts), 1))*100)}%`, background: cat.color}} />
+                        </div>
+                      </div>
+                      <div style={{display:'flex', gap:6, marginTop:12}}>
+                        <button className="btn" style={{flex:1, background: cat.color, color:'#fff', padding:'7px 4px', fontSize:'.74rem'}}
+                          onClick={e => { e.stopPropagation(); startQuiz(cat.id, 25, 'all'); }}>
+                          ▶ Quiz
+                        </button>
+                        <button className="btn btn-outline" style={{flex:1, borderColor: cat.color, color: cat.color, padding:'7px 4px', fontSize:'.74rem'}}
+                          onClick={e => { e.stopPropagation(); setView('notes'); }}>
+                          📝 Notes
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <section className="home-static-section">
+                  <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', gap:12, flexWrap:'wrap', marginBottom:14}}>
+                    <div>
+                      <h3 style={{fontSize:'1.08rem', fontWeight:800, color:'#156a75'}}>🌍 Static GK MCQ Practice</h3>
+                      <p style={{fontSize:'.82rem', color:'var(--muted)', marginTop:4}}>Choose a focused topic or practice the complete Static GK question set.</p>
+                    </div>
+                    <button className="btn" style={{background:'#156a75', color:'#fff'}} onClick={() => startQuiz('Static GK', 25, 'all')}>
+                      ▶ Practice Static GK
+                    </button>
+                  </div>
+                  <div className="home-static-topics">
+                    {STATIC_GK_TOPICS.map(topic => {
+                      const count = allQuestions.filter(q => q.category === 'Static GK' && q.topic === topic).length;
+                      return (
+                        <div className="home-static-topic" key={topic}>
+                          <div className="home-static-topic-title">{topic}</div>
+                          <div className="home-static-topic-count">{count} practice questions</div>
+                          <button className="btn btn-outline" style={{width:'100%', padding:'7px', fontSize:'.76rem', borderColor:'#156a75', color:'#156a75'}}
+                            onClick={() => startQuiz('Static GK', Math.min(25, count), topic)}>
+                            ▶ Practice up to 25
+                          </button>
+                          {count > 25 && (
+                            <button className="btn" style={{width:'100%', marginTop:8, padding:'7px', fontSize:'.76rem', background:'#156a75', color:'#fff'}}
+                              onClick={() => startQuiz('Static GK', count, topic)}>
+                              ▶ Practice all {count}
+                            </button>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </section>
+              </>
+            )}
+
+            {/* TOPIC NOTES */}
+            {view === 'notes' && <NotesView onStartQuiz={(cat, size) => startQuiz(cat, size)} />}
+
+            {/* BROWSE */}
+            {view === 'browse' && (
+              <>
+                <div className="toolbar">
+                  <div className="search-box">
+                    <span className="search-icon">🔍</span>
+                    <input placeholder="Search questions…" value={search} onChange={e => setSearch(e.target.value)} />
+                  </div>
+                  {filterCat === 'Static GK' && (
+                    <select aria-label="Filter Static GK topic" value={filterTopic} onChange={e => setFilterTopic(e.target.value)}>
+                      <option value="all">All Static GK Topics</option>
+                      {STATIC_GK_TOPICS.map(topic => <option key={topic} value={topic}>{topic}</option>)}
+                    </select>
+                  )}
+                  <button className="btn btn-primary" onClick={() => startQuiz(filterCat, Math.min(25, filteredQs.length), filterTopic)}>
+                    ▶ Quiz Filtered
+                  </button>
+                </div>
+                <div className="info-bar">
+                  <span>Showing <strong>{filteredQs.length}</strong> questions</span>
+                  {filterCat !== 'all' && <span className="info-pill">{filterCat}</span>}
+                  {filterTopic !== 'all' && <span className="info-pill">{filterTopic}</span>}
+                  {search && <span className="info-pill">Search: "{search}"</span>}
+                  {(filterCat !== 'all' || filterTopic !== 'all' || search) && (
+                    <button style={{fontSize:'.78rem', color:'var(--error)', background:'none', border:'none', cursor:'pointer', fontWeight:600}}
+                      onClick={() => { setFilterCat('all'); setFilterTopic('all'); setSearch(''); }}>✕ Clear filters</button>
+                  )}
+                </div>
+                <BrowseMode questions={filteredQs} />
+              </>
+            )}
+
+            {/* SYLLABUS */}
+            {view === 'syllabus' && <SyllabusView />}
+
+            {/* BOOKMARKS */}
+            {view === 'bookmarks' && (
+              <>
+                <div style={{display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap', gap:10}}>
+                  <h2 style={{fontSize:'1.1rem', fontWeight:700, color:'var(--primary)'}}>🔖 Saved Questions ({bookmarkQs.length})</h2>
+                  {bookmarkQs.length > 0 && (
+                    <button className="btn btn-primary" onClick={startBookmarkQuiz}>▶ Quiz Bookmarks</button>
+                  )}
+                </div>
+                {bookmarkQs.length === 0 ? (
+                  <div className="card" style={{textAlign:'center', padding:'40px 20px', color:'var(--muted)'}}>
+                    <div style={{fontSize:'2.5rem', marginBottom:12}}>🏷️</div>
+                    <div style={{fontWeight:600, marginBottom:6}}>No bookmarks yet</div>
+                    <div style={{fontSize:'.84rem'}}>Click 🏷️ on any question while browsing to save it here.</div>
+                  </div>
+                ) : (
+                  <BrowseMode questions={bookmarkQs} />
+                )}
+              </>
+            )}
+          </main>
+        </div>
+      )}
+
+      <Toast msg={toast} />
+
+      <footer style={{textAlign:'center', padding:'24px 16px', color:'var(--muted)', fontSize:'.78rem', borderTop:'1px solid var(--border)', marginTop:32}}>
+        <strong style={{color:'var(--primary)'}}>WBPSC Clerkship GK Quiz</strong> &nbsp;|&nbsp;
+        {allQuestions.length} Questions &nbsp;|&nbsp; {CATEGORIES.length} Categories &nbsp;|&nbsp;
+        Made with ❤️ for WBPSC aspirants &nbsp;|&nbsp; 2026
+      </footer>
+    </div>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+</script>
+</body>
+</html>
